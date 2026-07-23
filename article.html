@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="bn" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles & Publications - CCPAC | Chittagong College Physics & Astronomy Club</title>
+    <title>Scientific Articles - CCPAC</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts for Formal Typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -21,8 +21,9 @@
                         neonBlue: '#3b82f6',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
                         poppins: ['Poppins', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
                     }
                 }
             }
@@ -46,6 +47,21 @@
             box-shadow: 0 0 35px rgba(6, 182, 212, 0.35);
             border-color: rgba(6, 182, 212, 0.6);
         }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: rgba(3, 7, 18, 0.5);
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: rgba(6, 182, 212, 0.4);
+            border-radius: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: rgba(6, 182, 212, 0.8);
+        }
     </style>
 </head>
 <body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
@@ -53,7 +69,7 @@
     <!-- Glowing Background Effect -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
 
-    <!-- Navigation Bar (Matched with Home Page) -->
+    <!-- Navigation Bar (Matched with Home Page & Executives) -->
     <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -76,100 +92,211 @@
 
     <!-- Back to Activities -->
     <div class="max-w-6xl mx-auto px-6 pt-8">
-        <a href="act.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition font-sans">
+        <a href="act.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition">
             <i class="fa-solid fa-arrow-left"></i>
             <span>Back to Activities</span>
         </a>
     </div>
 
     <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto px-6 pt-8 pb-10 text-center space-y-6">
+    <section class="max-w-5xl mx-auto px-6 pt-8 pb-12 text-center space-y-6">
         <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
             <i class="fa-solid fa-pen-nib"></i>
-            <span>Scientific Writing & Publications</span>
+            <span>Scientific Communication</span>
         </div>
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 uppercase font-poppins">
-            Articles & Research Essays
+            ARTICLE
         </h1>
         
-        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800/80 shadow-2xl text-slate-300 text-sm sm:text-base leading-relaxed text-left space-y-4 font-sans">
+        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800/80 shadow-2xl text-slate-300 text-sm sm:text-base leading-relaxed text-left space-y-4 font-serif">
             <p>
-                CCPAC actively promotes scientific communication and technical writing. This platform empowers our members and aspiring young researchers to articulate complex physical concepts, reflect on advanced academic discussions, and share astronomical discoveries through engaging essays and articles.
+                CCPAC promotes scientific communication through article writing, giving members the opportunity to express ideas, summarize insights from sessions, and explain complex physics or astronomy concepts. This initiative helps members improve writing skills, articulate scientific thoughts clearly, and share knowledge with the club community.
             </p>
         </div>
     </section>
 
-    <!-- Articles Showcase Section -->
-    <section class="max-w-6xl mx-auto px-6 py-8 space-y-12">
+    <!-- Articles Grid Section -->
+    <section class="max-w-7xl mx-auto px-6 py-4 space-y-12">
         <div class="text-center space-y-2">
             <h2 class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">
-                Featured Publications
+                Featured Articles Archive
             </h2>
-            <p class="text-slate-400 text-sm font-sans">Explore insightful articles written by our club members and contributors</p>
+            <p class="text-slate-400 text-sm font-sans">Explore our published research pieces & essays</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Article Card 1 -->
-            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between p-6 space-y-4">
-                <div class="space-y-3">
-                    <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase font-poppins">
-                        Astrophysics
-                    </span>
-                    <h3 class="text-xl font-bold text-white leading-snug font-poppins">Decoding the Secrets of Black Hole Event Horizons</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-sans">
-                        A deep dive into general relativity, gravitational time dilation, and what happens when matter crosses the boundary of no return.
-                    </p>
+            <!-- Special Feature: Chandrasekhar Limit -->
+            <div class="glass-card rounded-3xl border border-cyan-500/40 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/275397HD/275397HD.jpg" alt="Chandrasekhar Limit" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-[10px] font-bold uppercase tracking-wider font-poppins">
+                            <i class="fa-solid fa-star mr-1"></i> Special Feature
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">Aiming for the Next Star: The Chandrasekhar Limit of Footballing Heritage</h3>
+                        <p class="text-slate-400 leading-relaxed line-clamp-3 font-serif">
+                            Tonight in New Jersey, Spain and Argentina meet in the FIFA World Cup 2026 Final. Breaking down footballing heritage through stellar physics...
+                        </p>
+                    </div>
                 </div>
-                <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
-                    <span><i class="fa-regular fa-user mr-1 text-cyan-400"></i> CCPAC Editorial</span>
-                    <a href="#" class="text-cyan-400 font-semibold hover:underline font-poppins">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
-                </div>
-            </div>
-
-            <!-- Article Card 2 -->
-            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between p-6 space-y-4">
-                <div class="space-y-3">
-                    <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase font-poppins">
-                        Quantum Mechanics
-                    </span>
-                    <h3 class="text-xl font-bold text-white leading-snug font-poppins">Quantum Entanglement: Spooky Action at a Distance</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-sans">
-                        Exploring EPR paradox, Bell's theorem, and how entangled states are revolutionizing modern quantum computing and communication.
-                    </p>
-                </div>
-                <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
-                    <span><i class="fa-regular fa-user mr-1 text-cyan-400"></i> CCPAC Editorial</span>
-                    <a href="#" class="text-cyan-400 font-semibold hover:underline font-poppins">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('chandrasekharModal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
                 </div>
             </div>
 
-            <!-- Article Card 3 -->
-            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between p-6 space-y-4">
-                <div class="space-y-3">
-                    <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase font-poppins">
-                        Classical Mechanics
-                    </span>
-                    <h3 class="text-xl font-bold text-white leading-snug font-poppins">The Elegance of Lagrangian and Hamiltonian Dynamics</h3>
-                    <p class="text-slate-400 text-xs leading-relaxed font-sans">
-                        Moving beyond Newtonian forces to understand physical systems through energy optimization and generalized coordinates.
-                    </p>
+            <!-- Article 6: Farhan Ahmad -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/bMgv8BdG/bMgv8BdG.jpg" alt="Through the Hill" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700 text-cyan-400 text-[10px] font-bold uppercase font-poppins">
+                            Article: 6
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">Through the Hill: How Quantum Mechanics Breaks the Rules</h3>
+                        <p><strong class="text-cyan-400">Author:</strong> Farhan Ahmad (1202526010031)</p>
+                        <p class="text-slate-400 leading-relaxed line-clamp-2 font-serif">An exploration of quantum tunneling defying classical intuition, wave-particle duality, and Heisenberg's Uncertainty Principle.</p>
+                    </div>
                 </div>
-                <div class="pt-4 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
-                    <span><i class="fa-regular fa-user mr-1 text-cyan-400"></i> CCPAC Editorial</span>
-                    <a href="#" class="text-cyan-400 font-semibold hover:underline font-poppins">Read More <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('farhanModal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 5: Stellar Evolution 2 -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/0RkZwDkF/0RkZwDkF.jpg" alt="Stellar Evolution 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700 text-cyan-400 text-[10px] font-bold uppercase font-poppins">
+                            Article: 5
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">নক্ষত্রের বিবর্তন: নীহারিকা থেকে কৃষ্ণগহ্বর (পর্ব-২: তারার জীবনচক্র)</h3>
+                        <p><strong class="text-cyan-400">Authors:</strong> Rajarshi Das Gupta, Efaj Mahadi Bhuiyan</p>
+                        <p class="text-slate-400 leading-relaxed line-clamp-2 font-serif">হাইড্রোস্ট্যাটিক সাম্যাবস্থা, ফিউশন শক্তির পরিবহন এবং তারার স্তরবিন্যাসযুক্ত অভ্যন্তরীণ গঠন নিয়ে বিস্তারিত আলোচনা।</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('stellar2Modal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 4: Stellar Evolution 1 -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/DfzTqYZZ/DfzTqYZZ.jpg" alt="Stellar Evolution 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700 text-cyan-400 text-[10px] font-bold uppercase font-poppins">
+                            Article: 4
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">নক্ষত্রের বিবর্তন: নীহারিকা থেকে কৃষ্ণগহ্বর (পর্ব-১: তারার জন্ম)</h3>
+                        <p><strong class="text-cyan-400">Authors:</strong> Rajarshi Das Gupta, Efaj Mahadi Bhuiyan</p>
+                        <p class="text-slate-400 leading-relaxed line-clamp-2 font-serif">নীহারিকার গ্যাস ও ধূলিকণার মহাকর্ষীয় সংকোচন থেকে প্রোটোস্টারের সৃষ্টি এবং স্থিতিশীল তারায় রূপান্তরের প্রক্রিয়া।</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('stellar1Modal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 3: Pi Day -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/GfK3kDc7/GfK3kDc7.jpg" alt="Pi Day Article" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700 text-cyan-400 text-[10px] font-bold uppercase font-poppins">
+                            Article: 3
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">π Tends To 4: Story of Pi and Number 4</h3>
+                        <p><strong class="text-cyan-400">Author:</strong> Prithwijit Mallik (1202425010176)</p>
+                        <p class="text-slate-400 leading-relaxed line-clamp-2 font-serif">Though π is irrational, why has it tended to its nearest natural number 4? Exploring the mathematical paradox.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('pidayModal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 2: Rajarshi Das Gupta -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/LXTFhZgy/LXTFhZgy.jpg" alt="Skipping Stone" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700 text-cyan-400 text-[10px] font-bold uppercase font-poppins">
+                            Article: 2
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">The Physics of a Skipping Stone: Underdamped Motion</h3>
+                        <p><strong class="text-cyan-400">Author:</strong> Rajarshi Das Gupta (1202526010041)</p>
+                        <p class="text-slate-400 leading-relaxed line-clamp-2 font-serif">Every skip is a battle between momentum and drag, explained through differential equations and fluid-surface interactions.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('skippingModal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Article 1: Sajjad Hosen Sakib -->
+            <div class="glass-card rounded-3xl border border-slate-800 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
+                <div>
+                    <div class="h-48 overflow-hidden bg-slate-950 border-b border-slate-800 relative group">
+                        <img src="https://i.ibb.co.com/8DWFD8KM/8DWFD8KM.jpg" alt="Particle Dynamics" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img">
+                        <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md border border-slate-700 text-cyan-400 text-[10px] font-bold uppercase font-poppins">
+                            Article: 1
+                        </span>
+                    </div>
+                    <div class="p-6 space-y-3 text-xs text-slate-300">
+                        <h3 class="text-base font-bold text-white leading-snug font-poppins">Particle Dynamics in Stratified Planetary Atmospheres</h3>
+                        <p><strong class="text-cyan-400">Author:</strong> Sajjad Hosen Sakib (1202425010149)</p>
+                        <p class="text-slate-400 leading-relaxed line-clamp-2 font-serif">An advanced study combining analytical modeling, numerical simulations, and survey-based educational insights.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <button onclick="openModal('sajjadModal')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-cyan-500 hover:text-slate-950 text-slate-200 border border-slate-700 hover:border-cyan-400 font-bold px-4 py-2.5 rounded-xl text-xs transition duration-300 w-full justify-center cursor-pointer">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Professional Footer (Matched with Home Page) -->
+    <!-- Professional Footer (Matched with Home Page & Executives) -->
     <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
-                <ul class="space-y-2 text-xs font-sans">
+                <ul class="space-y-2 text-xs">
                     <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
                     <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
                     <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
@@ -178,7 +305,7 @@
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
-                <ul class="space-y-2 text-xs font-sans">
+                <ul class="space-y-2 text-xs">
                     <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
                     <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
                     <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
@@ -186,14 +313,14 @@
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
-                <ul class="space-y-2 text-xs font-sans">
+                <ul class="space-y-2 text-xs">
                     <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
                     <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
                 </ul>
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
-                <ul class="space-y-2 text-xs font-sans">
+                <ul class="space-y-2 text-xs">
                     <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
                     <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
                     <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
@@ -203,24 +330,35 @@
             </div>
             <div class="space-y-3 lg:col-span-1 sm:col-span-2">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
-                <p class="text-xs text-slate-400 font-sans">Chittagong College, College Road, Chattogram.</p>
-                <p class="text-xs text-slate-400 font-sans">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+                <p class="text-xs text-slate-400">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
                 <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
                     <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
                     <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 font-sans">
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
             <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
             <div class="flex space-x-5 text-slate-300 text-base">
                 <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- Scripts for modal handling -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
 </body>
 </html>
