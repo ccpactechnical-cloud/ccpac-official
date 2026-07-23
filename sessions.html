@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessions - CCPAC | Chittagong College Physics & Astronomy Club</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceDark: '#030712',
+                        spaceCard: '#0b1329',
+                        neonCyan: '#06b6d4',
+                        neonBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .crisp-img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.75) 0%, rgba(3, 7, 18, 0.85) 100%);
+            backdrop-filter: blur(20px);
+        }
+        .glow-box {
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.3);
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- Glowing Background Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
+
+    <!-- Navigation Bar (Matched with Home Page) -->
+    <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30 crisp-img">
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="index.html#explore-section" class="hover:text-cyan-400 transition">Explore</a>
+                <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
+                <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
+                <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/25">
+                Join CCPAC
+            </a>
+        </div>
+    </header>
+
+    <!-- Back to Activities -->
+    <div class="max-w-6xl mx-auto px-6 pt-8">
+        <a href="act.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition font-sans">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Activities</span>
+        </a>
+    </div>
+
+    <!-- Sessions Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-8 pb-12 text-center space-y-6">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>Knowledge Sharing & Problem Solving</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 uppercase font-poppins">
+            SESSIONS
+        </h1>
+        
+        <!-- Intro Box matching Google Sites -->
+        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800/80 shadow-2xl text-slate-300 text-sm sm:text-base leading-relaxed text-left space-y-4 font-sans">
+            <div>
+                <h3 class="text-white font-bold text-base mb-1 font-poppins">Academic Sessions</h3>
+                <p>
+                    CCPAC regularly conducts academic sessions on physics and astronomy, led by seniors, alumni, and invited instructors[cite: 8]. These sessions cover a wide range of topics, from fundamental concepts to advanced research, providing members with insights into higher studies, scientific thinking, and real-world applications[cite: 8]. Active participation is encouraged, allowing students to ask questions, engage in discussions, and explore ideas beyond textbooks[cite: 8].
+                </p>
+            </div>
+            <div class="pt-2 border-t border-slate-800">
+                <h3 class="text-white font-bold text-base mb-1 font-poppins">Olympiad Sessions</h3>
+                <p>
+                    To prepare members for local, national, and international physics competitions, CCPAC organizes dedicated Olympiad Sessions[cite: 8]. These sessions focus on problem-solving techniques, conceptual clarity, and analytical skills[cite: 8]. Members receive guidance from experienced seniors and alumni who have excelled in various Olympiads, helping them develop a competitive edge and deepen their understanding of physics[cite: 8].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessions Showcase Feed -->
+    <section class="max-w-6xl mx-auto px-6 py-4 space-y-12">
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">
+                Conducted Sessions
+            </h2>
+            <p class="text-slate-400 text-sm font-sans">Explore our session archives and details[cite: 8]</p>
+        </div>
+
+        <!-- Session 3: Ahnaf Fayaz -->
+        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl glow-box">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 relative group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://i.ibb.co.com/pjV1zB5X/pjV1zB5X.jpg" alt="Mechanics Problems: A Casual Deep Dive" class="relative w-full h-[380px] object-cover rounded-2xl border-2 border-cyan-500/40 shadow-xl crisp-img">
+                </div>
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase font-poppins">
+                            <i class="fa-regular fa-calendar mr-1"></i> Session: 3 (09-04-2026)[cite: 8]
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase font-poppins">
+                            Olympiad Session[cite: 8]
+                        </span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white font-poppins">Mechanics Problems: A Casual Deep Dive[cite: 8]</h2>
+                    
+                    <!-- Info Block -->
+                    <div class="space-y-3 text-sm text-slate-300 bg-slate-950/60 p-5 rounded-2xl border border-slate-800/80 font-sans">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-chalkboard-user mr-1.5"></i> Instructor:[cite: 8]</span>
+                            <span class="text-white font-semibold">Ahnaf Fayaz[cite: 8]</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-graduation-cap mr-1.5"></i> Affiliation:[cite: 8]</span>
+                            <span>Mechanical Engineering, BUET ’25 <span class="text-slate-400">(Ex-Chittagong College ’25)</span>[cite: 8]</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-award mr-1.5"></i> Achievement:[cite: 8]</span>
+                            <span class="text-cyan-300 font-medium">National Champion, BdPhO ’22[cite: 8]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 2: Enamul Hoque Jewel -->
+        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl glow-box">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4 order-2 lg:order-1">
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase font-poppins">
+                            <i class="fa-regular fa-calendar mr-1"></i> Session: 2 (11-12-2025)[cite: 8]
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase font-poppins">
+                            Advanced Physics Session[cite: 8]
+                        </span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white font-poppins">Particles in Nuclear Physics[cite: 8]</h2>
+                    
+                    <!-- Info Block -->
+                    <div class="space-y-3 text-sm text-slate-300 bg-slate-950/60 p-5 rounded-2xl border border-slate-800/80 font-sans">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-chalkboard-user mr-1.5"></i> Instructor:[cite: 8]</span>
+                            <span class="text-white font-semibold">Enamul Hoque Jewel[cite: 8]</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-graduation-cap mr-1.5"></i> Affiliation:[cite: 8]</span>
+                            <span>Nuclear Engineering, University of Dhaka <span class="text-slate-400">(Batch 103)</span>[cite: 8]</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-building-columns mr-1.5"></i> Alumnus:[cite: 8]</span>
+                            <span>Chittagong College ’23[cite: 8]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative group order-1 lg:order-2">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://i.ibb.co.com/9m3k3ppj/9m3k3ppj.jpg" alt="Particles in Nuclear Physics" class="relative w-full h-[380px] object-cover rounded-2xl border-2 border-cyan-500/40 shadow-xl crisp-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 1: Srishti Bhattacharjee Ichchha -->
+        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl glow-box">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 relative group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://i.ibb.co.com/ZR6hdjJw/ZR6hdjJw.jpg" alt="Celestial Mechanics" class="relative w-full h-[380px] object-cover rounded-2xl border-2 border-cyan-500/40 shadow-xl crisp-img">
+                </div>
+                <div class="lg:col-span-7 space-y-4">
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase font-poppins">
+                            <i class="fa-regular fa-calendar mr-1"></i> Session: 1 (07-12-2025)[cite: 8]
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-bold uppercase font-poppins">
+                            CCPAC Intro & Session[cite: 8]
+                        </span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white font-poppins">Celestial Mechanics[cite: 8]</h2>
+                    
+                    <!-- Info Block -->
+                    <div class="space-y-3 text-sm text-slate-300 bg-slate-950/60 p-5 rounded-2xl border border-slate-800/80 font-sans">
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-chalkboard-user mr-1.5"></i> Instructor:[cite: 8]</span>
+                            <span class="text-white font-semibold">Srishti Bhattacharjee Ichchha[cite: 8]</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-building-columns mr-1.5"></i> Institution:[cite: 8]</span>
+                            <span class="text-white">Chittagong College ’26 <span class="text-cyan-300 font-medium">(Current Student)</span>[cite: 8]</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <span class="text-cyan-400 font-bold min-w-[110px]"><i class="fa-solid fa-award mr-1.5"></i> Achievement:[cite: 8]</span>
+                            <span class="text-cyan-300 font-medium">BDOAA ’25 National Winner and TST Camper[cite: 8]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Professional Footer (Matched with Home Page) -->
+    <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
+                    <li><a href="team.html" class="hover:text-cyan-400 transition">Executives</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
+                    <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
+                    <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
+                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
+                    <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
+                    <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
+                    <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
+                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3 lg:col-span-1 sm:col-span-2">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
+                <p class="text-xs text-slate-400 font-sans">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400 font-sans">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
+                    <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                    <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 font-sans">
+            <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
+            <div class="flex space-x-5 text-slate-300 text-base">
+                <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
