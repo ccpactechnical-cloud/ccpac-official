@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CCPAC | Chittagong College Physics & Astronomy Club</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceDark: '#030712',
+                        spaceCard: '#0b1329',
+                        neonCyan: '#06b6d4',
+                        neonBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.9) 0%, rgba(3, 7, 18, 0.95) 100%);
+            backdrop-filter: blur(15px);
+        }
+        .hover-glow:hover {
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
+            border-color: rgba(6, 182, 212, 0.5);
+            transform: translateY(-3px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- Glowing Background Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1400px] h-[500px] bg-gradient-to-r from-cyan-500/10 via-blue-600/10 to-indigo-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30">
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="about.html" class="text-cyan-400 font-bold transition">About Us</a>
+                <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
+                <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
+                <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/25">
+                Join CCPAC
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Header / Hero -->
+    <section class="max-w-5xl mx-auto px-6 pt-16 pb-12 text-center space-y-4">
+        <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-widest">Discover Our Identity</span>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold font-poppins text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">
+            About CCPAC
+        </h1>
+        <p class="text-slate-400 text-sm md:text-base max-w-2xl mx-auto font-sans">
+            Chittagong College Physics & Astronomy Club is a premier student-run scientific community dedicated to nurturing deep scientific curiosity, critical thinking, and cosmic exploration.
+        </p>
+    </section>
+
+    <!-- Core Vision & Mission Section -->
+    <section class="max-w-6xl mx-auto px-6 py-8">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 rounded-3xl border border-slate-800 space-y-4 hover-glow">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <h2 class="text-2xl font-bold font-poppins text-white">Our Vision</h2>
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed font-sans">
+                    To build a intellectually vibrant community of young minds at Chittagong College who look beyond conventional boundaries, master foundational physics, gaze into the deepest realms of astronomy, and emerge as future pioneers of science and innovation.
+                </p>
+            </div>
+
+            <div class="glass-card p-8 rounded-3xl border border-slate-800 space-y-4 hover-glow">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-2xl">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h2 class="text-2xl font-bold font-poppins text-white">Our Mission</h2>
+                <ul class="space-y-3 text-slate-300 text-sm md:text-base font-sans">
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-cyan-400 mt-1 mr-3 shrink-0"></i><span>Demystify complex physical laws and astronomical phenomena through interactive study circles and workshops.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-cyan-400 mt-1 mr-3 shrink-0"></i><span>Prepare enthusiastic students for National and International Physics, Astronomy, and Mathematics Olympiads.</span></li>
+                    <li class="flex items-start"><i class="fa-solid fa-check-circle text-cyan-400 mt-1 mr-3 shrink-0"></i><span>Foster scientific writing, problem-solving prowess, and collaborative research ethics.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy & Journey Section -->
+    <section class="max-w-6xl mx-auto px-6 py-12">
+        <div class="glass-card p-8 md:p-12 rounded-3xl border border-slate-800 space-y-6">
+            <div class="text-center space-y-2">
+                <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">Our Legacy</span>
+                <h2 class="text-2xl md:text-3xl font-extrabold font-poppins text-slate-100">Rooted in Excellence at Chittagong College</h2>
+            </div>
+            <div class="space-y-4 text-slate-300 text-sm md:text-base leading-relaxed font-sans">
+                <p>
+                    Established under the glorious academic heritage of Chittagong College, CCPAC has continually served as a beacon for passionate science learners. From organizing flagship physics camps, stargazing sessions, and podcast discussions to achieving glorious milestones on national and international stages (such as International Mathematical Olympiad achievements), our club represents unwavering dedication.
+                </p>
+                <p>
+                    We believe that true learning happens when curiosity meets action. Through peer-to-peer mentoring, rigorous problem-solving sessions, and interactive academic discussions, CCPAC transforms inquisitive students into confident researchers, thinkers, and problem solvers.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership / Advisory Panel Section -->
+    <section class="max-w-6xl mx-auto px-6 py-12 space-y-8">
+        <div class="text-center space-y-2">
+            <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/25">Guidance & Governance</span>
+            <h2 class="text-2xl md:text-3xl font-extrabold font-poppins text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">Our Patron & Leadership</h2>
+            <p class="text-slate-400 text-xs">Guiding hands behind CCPAC's monumental success</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Principal -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col items-center text-center space-y-4 hover-glow">
+                <img src="https://i.ibb.co.com/ds8cZHSN/Principal-Sir.jpg" alt="Principal" class="w-24 h-24 rounded-2xl object-cover object-top border-2 border-cyan-400 shadow-md">
+                <div>
+                    <h3 class="font-bold text-base text-slate-100 font-poppins">Professor Mohammad Mozahidul Islam Chowdhury</h3>
+                    <p class="text-[11px] uppercase tracking-widest text-cyan-400 font-bold mt-1">Principal, Chittagong College</p>
+                </div>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    Providing overarching administrative leadership, motivation, and visionary support for all academic endeavors.
+                </p>
+            </div>
+
+            <!-- Vice Principal -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col items-center text-center space-y-4 hover-glow">
+                <img src="https://i.ibb.co.com/nskDNdKP/vice-principal.jpg" alt="Vice Principal" class="w-24 h-24 rounded-2xl object-cover object-top border-2 border-cyan-400 shadow-md">
+                <div>
+                    <h3 class="font-bold text-base text-slate-100 font-poppins">Md. Shawkat Iqbal Faruqueee</h3>
+                    <p class="text-[11px] uppercase tracking-widest text-cyan-400 font-bold mt-1">Vice Principal, Chittagong College</p>
+                </div>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    Continual encouragement and guidance in shaping student welfare and holistic institutional growth.
+                </p>
+            </div>
+
+            <!-- Moderator -->
+            <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col items-center text-center space-y-4 hover-glow">
+                <img src="https://i.ibb.co.com/TBHR6SrZ/Zahirul-Islam-Sir.jpg" alt="Moderator" class="w-24 h-24 rounded-2xl object-cover object-top border-2 border-cyan-400 shadow-md">
+                <div>
+                    <h3 class="font-bold text-base text-slate-100 font-poppins">Md. Zahirul Islam</h3>
+                    <p class="text-[11px] uppercase tracking-widest text-cyan-400 font-bold mt-1">Moderator, CCPAC</p>
+                </div>
+                <p class="text-slate-300 text-xs leading-relaxed">
+                    Direct mentorship, operational oversight, and constant supervision of club activities and study sessions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+        <div class="glass-card p-8 md:p-12 rounded-3xl border border-cyan-500/30 space-y-6 shadow-xl">
+            <h2 class="text-2xl md:text-3xl font-extrabold font-poppins text-white">Ready to Explore the Universe with Us?</h2>
+            <p class="text-slate-300 text-sm max-w-xl mx-auto">
+                Join hands with the most enthusiastic community of young physicists and astronomers at Chittagong College.
+            </p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-6 py-3 rounded-xl text-sm transition shadow-lg shadow-cyan-500/25">
+                    Apply for Membership
+                </a>
+                <a href="index.html#contact" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-bold px-6 py-3 rounded-xl text-sm transition">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="about.html" class="text-cyan-400 transition">About Us</a></li>
+                    <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
+                    <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
+                    <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
+                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
+                    <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
+                    <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3 lg:col-span-1 sm:col-span-2">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
+                <p class="text-xs text-slate-400">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+            <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
+            <div class="flex space-x-5 text-slate-300 text-base">
+                <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
