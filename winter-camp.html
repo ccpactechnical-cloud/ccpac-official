@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winter Physics Camp 2025 - CCPAC | Chittagong College Physics & Astronomy Club</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceDark: '#030712',
+                        spaceCard: '#0b1329',
+                        neonCyan: '#06b6d4',
+                        neonBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .crisp-img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.9) 0%, rgba(3, 7, 18, 0.95) 100%);
+            backdrop-filter: blur(25px);
+        }
+        .glow-box {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.35);
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- Glowing Background Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-gradient-to-r from-cyan-500/10 to-blue-600/10 blur-[220px] rounded-full pointer-events-none"></div>
+
+    <!-- Navigation Bar (Matched with Home Page) -->
+    <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30 crisp-img">
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="index.html#explore-section" class="hover:text-cyan-400 transition">Explore</a>
+                <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
+                <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
+                <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/25">
+                Join CCPAC
+            </a>
+        </div>
+    </header>
+
+    <!-- Back to Events -->
+    <div class="max-w-6xl mx-auto px-6 pt-8">
+        <a href="events.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition font-sans">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to Events</span>
+        </a>
+    </div>
+
+    <!-- Hero / Camp Banner Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-8 pb-10 text-center space-y-6">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
+            <i class="fa-solid fa-snowflake"></i>
+            <span>Flagship Academic Program</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 uppercase font-poppins">
+            Winter Physics Camp 2025
+        </h1>
+        
+        <!-- Main Camp Banner Image -->
+        <div class="glass-card p-3 sm:p-5 rounded-3xl border border-slate-800/80 shadow-2xl overflow-hidden group">
+            <div class="relative rounded-2xl overflow-hidden border border-cyan-500/30 bg-slate-950">
+                <img src="https://i.postimg.cc/k47r4G37/winter-camp-banner.jpg" alt="Winter Physics Camp 2025 Banner" class="w-full h-auto object-cover group-hover:scale-[1.01] transition duration-500 crisp-img" onerror="this.src='https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Description & Schedule Section -->
+    <section class="max-w-6xl mx-auto px-6 py-6 space-y-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- Left Column: Description & Schedule -->
+            <div class="lg:col-span-12 space-y-8">
+                <!-- Description Card -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800/80 shadow-2xl space-y-4 font-sans">
+                    <h2 class="text-2xl font-black text-cyan-400 flex items-center space-x-3 font-poppins">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Event Description</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Chittagong College Physics & Astronomy Club presents Winter Physics Camp 2025 conducted by our honorable alumni. Designed to bridge foundational concepts with advanced problem-solving techniques.
+                    </p>
+                    <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800 text-xs sm:text-sm text-cyan-300 font-semibold">
+                        <i class="fa-solid fa-clock mr-2 text-amber-400"></i> Overall Session Time: 10:00 AM – 12:15 PM<br>
+                        <span class="text-slate-400 font-normal mt-1 block">Each day consists of two 1-hour sessions with a 15-minute break.</span>
+                    </div>
+                </div>
+
+                <!-- Schedule Card -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800/80 shadow-2xl space-y-6 font-sans">
+                    <h2 class="text-2xl font-black text-cyan-400 flex items-center space-x-3 font-poppins">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Camp Schedule & Topics</span>
+                    </h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-300">
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80 flex flex-col justify-between gap-2 hover:border-cyan-500/50 transition">
+                            <span class="text-cyan-400 font-bold"><i class="fa-regular fa-calendar mr-2"></i>23 Dec 2025</span>
+                            <span class="text-slate-200 font-medium">Heat & Thermodynamics</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80 flex flex-col justify-between gap-2 hover:border-cyan-500/50 transition">
+                            <span class="text-cyan-400 font-bold"><i class="fa-regular fa-calendar mr-2"></i>24 Dec 2025</span>
+                            <span class="text-slate-200 font-medium">Work, Energy & Power</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80 flex flex-col justify-between gap-2 hover:border-cyan-500/50 transition">
+                            <span class="text-cyan-400 font-bold"><i class="fa-regular fa-calendar mr-2"></i>27 Dec 2025</span>
+                            <span class="text-slate-200 font-medium">Simple Harmonic Motion (SHM) & Waves</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80 flex flex-col justify-between gap-2 hover:border-cyan-500/50 transition">
+                            <span class="text-cyan-400 font-bold"><i class="fa-regular fa-calendar mr-2"></i>28 Dec 2025</span>
+                            <span class="text-slate-200 font-medium">Relativity & Quantum Mechanics</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800/80 flex flex-col justify-between gap-2 hover:border-cyan-500/50 transition">
+                            <span class="text-cyan-400 font-bold"><i class="fa-regular fa-calendar mr-2"></i>29 Dec 2025</span>
+                            <span class="text-slate-200 font-medium">Electricity & Magnetism, Newtonian Mechanics</span>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-950/60 border border-amber-500/40 flex flex-col justify-between gap-2 bg-gradient-to-r from-amber-500/10 to-transparent">
+                            <span class="text-amber-400 font-bold"><i class="fa-regular fa-calendar mr-2"></i>30 Dec 2025</span>
+                            <span class="text-white font-semibold">Winter Physics Mastery Test 2025 (Open Book Exam) & Wrap-Up</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Link to Camp Days Gallery Section -->
+    <section class="max-w-6xl mx-auto px-6 py-4">
+        <a href="camp-days.html" class="glass-card hover:border-cyan-500/80 p-6 sm:p-8 rounded-3xl border border-slate-800 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-6 glow-box block group transition">
+            <div class="space-y-2 text-center sm:text-left font-sans">
+                <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-wider font-poppins">
+                    Photo Gallery & Highlights
+                </span>
+                <h3 class="text-2xl font-black text-white group-hover:text-cyan-400 transition font-poppins">Explore Camp Days Gallery</h3>
+                <p class="text-slate-400 text-xs sm:text-sm">Check out day-by-day session photos, instructor moments, and the final wrap-up.</p>
+            </div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 text-xl transition shrink-0 shadow-lg">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </a>
+    </section>
+
+    <!-- Instructors Panel Section -->
+    <section class="max-w-6xl mx-auto px-6 py-12 space-y-8 font-sans">
+        <div class="text-center space-y-2">
+            <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-bold uppercase tracking-wider font-poppins">
+                <i class="fa-solid fa-star mr-1"></i> Expert Mentorship
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">
+                Honorable Instructors Panel
+            </h2>
+            <p class="text-slate-400 text-sm">Distinguished alumni guiding the future generation of physicists</p>
+        </div>
+
+        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-slate-300">
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">1</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Siddhartha Hrishit Chakraborty</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET CSE '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">2</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Lababa Tasnia Khan</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET EEE '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">3</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Md. Shaftiul Hasan Ovi</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET EEE '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">4</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Krettika Roy</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET IPE '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">5</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Tashfia Siddiqua</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET EEE '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">6</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Sababu Tamanna</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">CUET EEE '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">7</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Ahamed Hamza</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET ME '23 (CC '23)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">8</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Abrar Azmain</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">CUET ME '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">9</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Swayambhu Naiwrit Chakraborty</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET Archi '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">10</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Al-Jawad</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET ME '22 (CC '22)</span>
+                    </div>
+                </div>
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-start space-x-4 glow-box">
+                    <span class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs shrink-0">11</span>
+                    <div>
+                        <strong class="text-white text-base block font-poppins">Anuprash Barua</strong>
+                        <span class="text-cyan-400 text-xs font-semibold">BUET Civil '22 (CC '22)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer (Matched with Home Page) -->
+    <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
+                    <li><a href="team.html" class="hover:text-cyan-400 transition">Executives</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
+                    <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
+                    <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
+                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
+                    <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
+                    <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
+                    <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
+                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3 lg:col-span-1 sm:col-span-2">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
+                <p class="text-xs text-slate-400 font-sans">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400 font-sans">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
+                    <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                    <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 font-sans">
+            <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
+            <div class="flex space-x-5 text-slate-300 text-base">
+                <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
