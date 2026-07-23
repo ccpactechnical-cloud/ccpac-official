@@ -29,28 +29,35 @@
         }
     </script>
     <style>
-        .glass-card {
-            background: linear-gradient(135deg, rgba(11, 19, 41, 0.9) 0%, rgba(3, 7, 18, 0.95) 100%);
-            backdrop-filter: blur(15px);
+        .crisp-img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
         }
-        .hover-glow:hover {
-            box-shadow: 0 0 25px rgba(6, 182, 212, 0.25);
-            border-color: rgba(6, 182, 212, 0.5);
-            transform: translateY(-3px);
-            transition: all 0.3s ease;
+        .glass-card {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.75) 0%, rgba(3, 7, 18, 0.85) 100%);
+            backdrop-filter: blur(20px);
+        }
+        .glow-box {
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.3);
+            border-color: rgba(6, 182, 212, 0.6);
         }
     </style>
 </head>
 <body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
 
     <!-- Glowing Background Effect -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1400px] h-[500px] bg-gradient-to-r from-cyan-500/10 via-blue-600/10 to-indigo-500/10 blur-[150px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
 
-    <!-- Navigation Bar (Matched with Home Page) -->
+    <!-- Navigation Bar (Matched with Home & Founders Page) -->
     <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30">
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30 crisp-img">
                 <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
             </div>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
@@ -67,60 +74,73 @@
         </div>
     </header>
 
-    <!-- Hero Section / Title -->
-    <section class="max-w-6xl mx-auto px-6 pt-12 pb-12 text-center space-y-6">
-        <div class="flex justify-center">
-            <div class="relative group">
-                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 animate-pulse"></div>
-                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Club Logo" class="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-slate-900 shadow-2xl">
-            </div>
+    <!-- About Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 text-center space-y-4">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
+            <i class="fa-solid fa-circle-info"></i>
+            <span>Discover Our Identity</span>
         </div>
-        
-        <div class="space-y-3 max-w-4xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight font-poppins">
-                About <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">CCPAC</span>
-            </h1>
-            <p class="text-cyan-300 italic text-sm md:text-base font-medium tracking-wide font-poppins">
-                "Promoting scientific literacy from subatomic scales to galactic horizons"
-            </p>
-        </div>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-poppins">
+            About CCPAC
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed font-sans">
+            Chittagong College Physics & Astronomy Club is a premier student-run scientific community dedicated to nurturing deep scientific curiosity, critical thinking, and cosmic exploration.
+        </p>
     </section>
 
-    <!-- About Main Content -->
-    <section class="max-w-5xl mx-auto px-6 pb-16 space-y-8">
-        <div class="glass-card p-6 md:p-10 rounded-3xl border border-slate-800 shadow-xl space-y-6 text-left">
-            <h2 class="text-xl md:text-2xl font-bold font-poppins text-cyan-300 border-b border-slate-800 pb-4">Who We Are</h2>
-            <p class="text-slate-300 text-sm md:text-base leading-relaxed font-sans">
-                Chittagong College Physics & Astronomy Club (CCPAC) is a student-driven academic community where curiosity meets the cosmos. Founded under the glorious tradition of Chittagong College, we strive to make sense of the universe in unconventional ways. Our mission is to shift your perspective from mere sensory impressions to a deeper, mathematical, and logical understanding of reality.
-            </p>
-            <p class="text-slate-300 text-sm md:text-base leading-relaxed font-sans">
-                At CCPAC, we explore the fundamental laws of nature and the vast mysteries that lie beyond our skies. From the tiniest subatomic particles to the grandest galaxies, we learn to question, observe, and experiment together through study circles, workshops, problem-solving classes, and interactive segments like our podcast <strong class="text-cyan-400">EigenTalks</strong> and <strong class="text-cyan-400">Weekly Physics Challenge</strong>.
-            </p>
+    <!-- Main Content Showcase -->
+    <section class="max-w-6xl mx-auto px-6 py-6 space-y-12">
+
+        <!-- Who We Are Section -->
+        <div class="glass-card p-8 sm:p-12 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box">
+            <div class="absolute -right-20 -top-20 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="space-y-6">
+                <div>
+                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">Who We Are</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white mt-1 font-poppins">Chittagong College Physics & Astronomy Club</h2>
+                </div>
+                <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
+                    <p>
+                        Rooted in a timeless curiosity to understand nature and the cosmos, the <strong class="text-cyan-300">Chittagong College Physics & Astronomy Club</strong>, founded on 13 February 2025, aspires to cultivate a dynamic academic community for students passionate about physics and astronomy. Our mission is to promote scientific literacy and curiosity by exploring the fundamental laws of nature and the vast mysteries of the universe.
+                    </p>
+                    <p>
+                        CCPAC serves as a hub for learning, collaboration, and intellectual growth beyond the classroom. We regularly organize academic sessions on physics and astronomy, conducted by senior students and alumni who are currently studying at various renowned universities.
+                    </p>
+                    <p>
+                        To further extend scientific dialogue and expression, CCPAC highlights its own podcast <strong class="text-cyan-300">EigenTalks</strong>, a <strong class="text-cyan-300">Weekly Physics Challenge</strong>, and an engaging <strong class="text-cyan-300">Article Writing</strong> segment to strengthen analytical thinking, scientific writing, and problem-solving skills among members.
+                    </p>
+                </div>
+            </div>
         </div>
 
         <!-- Vision & Mission Grid -->
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 space-y-4 hover-glow">
-                <h3 class="text-lg md:text-xl font-bold text-cyan-300 font-poppins flex items-center">
-                    <i class="fa-solid fa-eye mr-2 text-cyan-400"></i> Our Vision
-                </h3>
-                <p class="text-slate-300 text-xs md:text-sm leading-relaxed font-sans">
-                    To cultivate a dynamic intellectual community of young scientists and astronomers at Chittagong College who possess analytical prowess, boundless cosmic curiosity, and the capability to excel on national and global stages.
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl space-y-4 relative overflow-hidden glow-box">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shadow-inner">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-black text-cyan-400 tracking-tight font-poppins">Our Vision</h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
+                    To build a vibrant and intellectually fearless community of young minds at Chittagong College who look beyond conventional boundaries, master foundational physics, gaze into the deepest realms of astronomy, and emerge as future pioneers of science, research, and innovation for the nation and the world.
                 </p>
             </div>
 
-            <div class="glass-card p-6 md:p-8 rounded-2xl border border-slate-800 space-y-4 hover-glow">
-                <h3 class="text-lg md:text-xl font-bold text-cyan-300 font-poppins flex items-center">
-                    <i class="fa-solid fa-bullseye mr-2 text-cyan-400"></i> Our Mission
-                </h3>
-                <p class="text-slate-300 text-xs md:text-sm leading-relaxed font-sans">
-                    To bridge the gap between classroom textbooks and advanced scientific exploration through peer mentoring, Olympiad training, collaborative problem-solving, and scientific writing.
+            <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl space-y-4 relative overflow-hidden glow-box">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 text-2xl shadow-inner">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-black text-cyan-400 tracking-tight font-poppins">Our Mission</h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-sans">
+                    To cultivate scientific literacy, critical thinking, and problem-solving skills through regular academic study circles, Olympiad camps, engaging podcasts like EigenTalks, and collaborative practical projects, bridging the gap between classroom textbooks and the wonders of the cosmos.
                 </p>
             </div>
         </div>
+
     </section>
 
-    <!-- Professional Footer (Matched with Home Page) -->
+    <!-- Professional Footer (Matched with Home & Founders Page) -->
     <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div class="space-y-3">
