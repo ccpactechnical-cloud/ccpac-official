@@ -52,7 +52,7 @@
     <!-- Glowing Background Effect -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-gradient-to-r from-cyan-500/10 to-blue-600/10 blur-[220px] rounded-full pointer-events-none"></div>
 
-    <!-- Navigation Bar (Matched with Home Page) -->
+    <!-- Navigation Bar -->
     <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -104,21 +104,20 @@
     <section class="max-w-6xl mx-auto px-6 py-6 space-y-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Card 1: Raihan Siddiquee (Medal Overflow / Out of Box Highlight) -->
-            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-visible glow-box flex flex-col justify-between mt-6">
+            <!-- Card 1: Raihan Siddiquee (Medal Overflow Highlighted) -->
+            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-visible glow-box flex flex-col justify-between mt-12 mb-4">
                 <div>
-                    <!-- Image Container with overflow visible so the bottom medal sticks out -->
-                    <div class="relative h-72 overflow-visible bg-slate-950 rounded-t-3xl">
-                        <img src="https://i.ibb.co.com/Xxr1M7F3/WhatsApp-Image-2026-07-20-at-5-28-06-PM.jpg" alt="Md. Raihan Siddiquee" class="w-full h-full object-cover object-top rounded-t-3xl crisp-img shadow-2xl">
-                        <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-spaceDark to-transparent pointer-events-none rounded-t-3xl"></div>
+                    <!-- Image Container with overflow visible so the medal pops out of the top/card -->
+                    <div class="relative h-80 overflow-visible bg-transparent rounded-t-3xl">
+                        <img src="https://i.ibb.co.com/HLyHzJJK/WhatsApp-Image-2026-07-20-at-5-28-06-PM.jpg" alt="Md. Raihan Siddiquee" class="w-full h-full object-cover object-top rounded-3xl crisp-img shadow-2xl border border-cyan-500/30">
                         
-                        <!-- Badge inside -->
-                        <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-bold uppercase backdrop-blur-md font-poppins shadow-lg z-10">
+                        <!-- Badge inside bottom left of image -->
+                        <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-bold uppercase backdrop-blur-md font-poppins shadow-lg z-20">
                             International Silver Medalist
                         </span>
                     </div>
 
-                    <div class="p-6 pt-8 space-y-3 font-sans">
+                    <div class="p-6 pt-12 space-y-3 font-sans">
                         <h3 class="text-xl font-bold text-white font-poppins">Md. Raihan Siddiquee</h3>
                         <p class="text-cyan-400 text-xs font-semibold">Silver Medalist, 67th International Mathematical Olympiad (IMO) 2026</p>
                         <p class="text-slate-400 text-xs leading-relaxed">
@@ -135,15 +134,15 @@
             </div>
 
             <!-- Future/Upcoming Blueprint Card 2 (Placeholder) -->
-            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-hidden glow-box flex flex-col justify-between opacity-80">
+            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-hidden glow-box flex flex-col justify-between opacity-80 mt-12 mb-4">
                 <div>
-                    <div class="relative h-72 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
+                    <div class="relative h-80 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
                         <i class="fa-solid fa-user-graduate text-slate-700 text-5xl"></i>
                         <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-slate-800 border border-slate-700 text-slate-400 text-xs font-bold uppercase backdrop-blur-md font-poppins">
                             Upcoming Edition
                         </span>
                     </div>
-                    <div class="p-6 space-y-3 font-sans">
+                    <div class="p-6 pt-12 space-y-3 font-sans">
                         <h3 class="text-xl font-bold text-slate-300 font-poppins">Next Feature</h3>
                         <p class="text-slate-500 text-xs font-semibold">To Be Announced</p>
                         <p class="text-slate-500 text-xs leading-relaxed">
@@ -162,7 +161,7 @@
         </div>
     </section>
 
-    <!-- Professional Footer (Matched with Home Page) -->
+    <!-- Professional Footer -->
     <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div class="space-y-3">
@@ -186,7 +185,7 @@
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
                 <ul class="space-y-2 text-xs font-sans">
                     <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
-                    <li><a href="challenge.html" class="hover:text-cyan-400 transition-cyan-400">Weekly Challenge</a></li>
+                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
                 </ul>
             </div>
             <div class="space-y-3">
@@ -196,7 +195,7 @@
                     <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
                     <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
                     <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
-                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition-cyan-400">IOAA</a></li>
+                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
                 </ul>
             </div>
             <div class="space-y-3 lg:col-span-1 sm:col-span-2">
