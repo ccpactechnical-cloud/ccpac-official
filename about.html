@@ -31,6 +31,21 @@
             background: linear-gradient(135deg, rgba(11, 19, 41, 0.7) 0%, rgba(3, 7, 18, 0.8) 100%);
             backdrop-filter: blur(20px);
         }
+        /* Glowing Card Effect */
+        .glow-box {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.9) 0%, rgba(3, 7, 18, 0.95) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.15), inset 0 0 15px rgba(6, 182, 212, 0.05);
+            transition: all 0.4s ease;
+        }
+        .glow-box:hover {
+            border-color: rgba(6, 182, 212, 0.8);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.35), inset 0 0 20px rgba(6, 182, 212, 0.15);
+            transform: translateY(-3px);
+        }
+        .glow-text {
+            text-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
+        }
     </style>
 </head>
 <body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
@@ -43,7 +58,7 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
                 <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-11 h-11 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/35 crisp-img">
-                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">CCPAC</span>
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 glow-text">CCPAC</span>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide text-slate-300">
                 <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
@@ -80,69 +95,56 @@
                 </button>
             </div>
 
-            <!-- Right Side: Content & Stats -->
+            <!-- Right Side: Content -->
             <div class="lg:col-span-6 space-y-6">
                 <div class="space-y-2">
                     <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest">
                         <i class="fa-solid fa-circle-info"></i>
                         <span>Welcome to CCPAC</span>
                     </div>
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 glow-text">
                         Who We Are?
                     </h1>
                 </div>
                 
                 <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed text-left">
                     <p>
-                        Rooted in a timeless curiosity to understand nature and the cosmos, the <strong class="text-cyan-300">Chittagong College Physics & Astronomy Club</strong> was established on 13 February 2025. Following its inception, the club embarked on its active administrative journey on November 22, 2025, with the induction of its inaugural executive body, the <strong class="text-cyan-300">Executive Committee 2025–26</strong>. CCPAC aspires to cultivate a vibrant academic community dedicated to physics and astronomy, fostering scientific literacy and inquiry through the exploration of fundamental natural laws and cosmic mysteries.
+                        Rooted in a timeless curiosity to understand nature and the cosmos, the <strong class="text-cyan-300">Chittagong College Physics & Astronomy Club</strong> was established on 13 February 2025. Following its inception, the club formally commenced its administrative journey on November 22, 2025, marked by the establishment of the Executive Committee 2025–26 as its inaugural leadership body. CCPAC aspires to cultivate a vibrant academic community dedicated to physics and astronomy, fostering scientific literacy and inquiry through the exploration of fundamental natural laws and cosmic mysteries.
                     </p>
                     <p>
-                        Serving as a premier platform for intellectual enrichment beyond the traditional curriculum, CCPAC organizes regular academic seminars and interactive sessions led by distinguished alumni and senior scholars currently pursuing higher education at esteemed institutions.
+                        Serving as a premier platform for intellectual enrichment beyond the traditional curriculum, CCPAC organizes regular academic seminars, specialized camps, and interactive events led by distinguished alumni and senior scholars currently pursuing higher education at esteemed institutions.
                     </p>
-                    <div class="bg-slate-950/60 p-5 rounded-2xl border border-slate-800/80 space-y-3 shadow-inner">
-                        <p class="text-xs uppercase tracking-wider text-cyan-400 font-bold">Key Core Activities & Blueprint Highlights:</p>
-                        <ul class="space-y-2 text-xs sm:text-sm text-slate-300">
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-microphone-lines text-cyan-400 mt-1"></i>
-                                <span><strong class="text-cyan-300">EigenTalks Podcast:</strong> An engaging media platform featuring intellectual scientific discourses, expert discussions, and academic insights.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-brain text-cyan-400 mt-1"></i>
-                                <span><strong class="text-cyan-300">Weekly Physics Challenge:</strong> Regular analytical problem-solving modules designed to test and sharpen critical thinking among members.</span>
-                            </li>
-                            <li class="flex items-start space-x-2">
-                                <i class="fa-solid fa-pen-nib text-cyan-400 mt-1"></i>
-                                <span><strong class="text-cyan-300">Article Writing Segments:</strong> Structured programs cultivating scientific articulation, technical writing, and thorough conceptual research.</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Official Club Stats -->
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
-                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-center shadow-inner">
-                        <h3 class="text-2xl font-black text-cyan-400">1 Year+</h3>
-                        <p class="text-xs text-slate-400 mt-1">Journey</p>
-                    </div>
-                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-center shadow-inner">
-                        <h3 class="text-2xl font-black text-cyan-400">20+</h3>
-                        <p class="text-xs text-slate-400 mt-1">Sessions</p>
-                    </div>
-                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-center shadow-inner">
-                        <h3 class="text-2xl font-black text-cyan-400">1k+</h3>
-                        <p class="text-xs text-slate-400 mt-1">Members & Alumni</p>
-                    </div>
-                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-center shadow-inner">
-                        <h3 class="text-2xl font-black text-cyan-400">1</h3>
-                        <p class="text-xs text-slate-400 mt-1">Flagship Event</p>
-                    </div>
-                    <div class="bg-slate-900/90 p-4 rounded-xl border border-slate-800 text-center col-span-2 sm:col-span-2 shadow-inner">
-                        <h3 class="text-2xl font-black text-cyan-400">10+</h3>
-                        <p class="text-xs text-slate-400 mt-1">Contests & Challenges</p>
-                    </div>
+                    <p>
+                        To further extend scientific dialogue and expression, CCPAC highlights its own podcast <strong class="text-cyan-300">EigenTalks</strong>, a <strong class="text-cyan-300">Weekly Physics Challenge</strong>, and an engaging <strong class="text-cyan-300">Article Writing</strong> segment, while maintaining a proud tradition of academic excellence through our comprehensive <strong class="text-cyan-300">Achievers Blueprint</strong>.
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <!-- Official Club Stats (Glowing Boxes placed between Who We Are & CCPAC Family) -->
+    <section class="max-w-7xl mx-auto px-6 py-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="glow-box p-6 rounded-2xl text-center">
+                <h3 class="text-3xl font-black text-cyan-400 glow-text">1 Year+</h3>
+                <p class="text-sm text-slate-300 mt-1 font-medium">Journey</p>
+            </div>
+            <div class="glow-box p-6 rounded-2xl text-center">
+                <h3 class="text-3xl font-black text-cyan-400 glow-text">20+</h3>
+                <p class="text-sm text-slate-300 mt-1 font-medium">Sessions</p>
+            </div>
+            <div class="glow-box p-6 rounded-2xl text-center">
+                <h3 class="text-3xl font-black text-cyan-400 glow-text">1k+</h3>
+                <p class="text-sm text-slate-300 mt-1 font-medium">Members & Alumni</p>
+            </div>
+            <div class="glow-box p-6 rounded-2xl text-center lg:col-span-1 sm:col-span-1">
+                <h3 class="text-3xl font-black text-cyan-400 glow-text">1</h3>
+                <p class="text-sm text-slate-300 mt-1 font-medium">Flagship Event</p>
+            </div>
+            <div class="glow-box p-6 rounded-2xl text-center lg:col-span-2 sm:col-span-2">
+                <h3 class="text-3xl font-black text-cyan-400 glow-text">10+</h3>
+                <p class="text-sm text-slate-300 mt-1 font-medium">Contests & Challenges</p>
+            </div>
         </div>
     </section>
 
@@ -153,7 +155,7 @@
             
             <!-- Family Text Block -->
             <div class="max-w-4xl mx-auto space-y-6">
-                <h2 class="text-3xl font-black text-cyan-400 tracking-tight text-center">The CCPAC Family</h2>
+                <h2 class="text-3xl font-black text-cyan-400 tracking-tight text-center glow-text">The CCPAC Family</h2>
                 <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed text-left bg-slate-950/60 p-6 sm:p-8 rounded-2xl border border-slate-800/80 shadow-inner">
                     <p>
                         The Chittagong College Physics & Astronomy Club is more than an academic organization; it is a family united by a shared passion for physics and astronomy.
@@ -189,7 +191,7 @@
     <section class="max-w-5xl mx-auto px-6 py-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <!-- Founders Rectangular Box with founder.html link -->
-            <a href="founder.html" class="glass-card hover:border-cyan-500/60 p-6 sm:p-8 rounded-2xl transition duration-300 shadow-2xl group border border-slate-800 flex items-center justify-between relative overflow-hidden">
+            <a href="founder.html" class="glass-card glow-box p-6 sm:p-8 rounded-2xl transition duration-300 shadow-2xl group flex items-center justify-between relative overflow-hidden">
                 <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
                 <div class="flex items-center space-x-4">
                     <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl group-hover:scale-110 transition">
@@ -206,7 +208,7 @@
             </a>
 
             <!-- Team Rectangular Box -->
-            <a href="team.html" class="glass-card hover:border-cyan-500/60 p-6 sm:p-8 rounded-2xl transition duration-300 shadow-2xl group border border-slate-800 flex items-center justify-between relative overflow-hidden">
+            <a href="team.html" class="glass-card glow-box p-6 sm:p-8 rounded-2xl transition duration-300 shadow-2xl group flex items-center justify-between relative overflow-hidden">
                 <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
                 <div class="flex items-center space-x-4">
                     <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-cyan-400 text-xl group-hover:scale-110 transition">
