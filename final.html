@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCPAC WC Semi-final Special</title>
+    <title>CCPAC Grand Final Special</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Galada&family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
@@ -28,10 +28,10 @@
             background: linear-gradient(145deg, #111a36, #070d1f);
             width: 100%;
             max-width: 1000px;
-            border: 3px solid #3b82f6;
+            border: 3px solid #ff4b4b;
             border-radius: 25px;
             padding: 50px;
-            box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 0 40px rgba(255, 75, 75, 0.3);
             position: relative;
             overflow: hidden;
         }
@@ -43,7 +43,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(255, 75, 75, 0.05) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -52,18 +52,18 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            border-bottom: 2px dashed rgba(59, 130, 246, 0.3);
+            border-bottom: 2px dashed rgba(255, 75, 75, 0.3);
             padding-bottom: 30px;
             margin-bottom: 40px;
         }
 
-        /* --- ইন্টারঅ্যাক্টিভ লোগো স্টাইল (ঘুরবে না, শুধু গ্রো/গ্লো করবে) --- */
+        /* --- ইন্টারঅ্যাক্টিভ লোগো স্টাইল --- */
         .club-logo {
             width: 140px;
             height: 140px;
             object-fit: cover;
             border-radius: 50%;
-            border: 2px solid #3b82f6;
+            border: 2px solid #ff4b4b;
             margin-bottom: 20px;
             cursor: pointer;
             transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -71,14 +71,14 @@
         }
 
         .club-logo:hover {
-            transform: scale(1.1); /* শুধু জুম হবে, কোনো rotate থাকবে না */
-            border-color: #60a5fa;
-            box-shadow: 0 0 30px rgba(96, 165, 250, 0.8), 0 0 50px rgba(59, 130, 246, 0.4);
+            transform: scale(1.1) rotate(360deg);
+            border-color: #ffb443;
+            box-shadow: 0 0 30px rgba(255, 180, 67, 0.8), 0 0 50px rgba(255, 75, 75, 0.4);
         }
 
         @keyframes logoPulse {
-            0%, 100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
-            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.8); }
+            0%, 100% { box-shadow: 0 0 15px rgba(255, 75, 75, 0.4); }
+            50% { box-shadow: 0 0 30px rgba(255, 75, 75, 0.8); }
         }
 
         .club-name {
@@ -86,8 +86,8 @@
             font-size: 1.8rem;
             font-weight: 700;
             letter-spacing: 1px;
-            color: #3b82f6;
-            text-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+            color: #ff4b4b;
+            text-shadow: 0 0 10px rgba(255, 75, 75, 0.3);
         }
 
         .subtitle {
@@ -99,8 +99,8 @@
 
         .badge-container {
             margin-top: 20px;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            background: rgba(255, 75, 75, 0.1);
+            border: 1px solid rgba(255, 75, 75, 0.2);
             padding: 10px 25px;
             border-radius: 50px;
             display: inline-block;
@@ -109,7 +109,7 @@
         .badge-text {
             font-size: 1.1rem;
             font-weight: 700;
-            color: #60a5fa;
+            color: #ff7676;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -123,7 +123,7 @@
         }
 
         .match-vs {
-            background: linear-gradient(45deg, #3b82f6, #60a5fa);
+            background: linear-gradient(45deg, #ff4b4b, #ffb443);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 800;
@@ -135,7 +135,7 @@
             flex-wrap: wrap;
             gap: 15px;
             background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(59, 130, 246, 0.2);
+            border: 1px solid rgba(255, 75, 75, 0.2);
             border-radius: 12px;
             padding: 15px;
             margin-bottom: 35px;
@@ -144,15 +144,15 @@
         }
 
         .meta-item strong {
-            color: #60a5fa;
+            color: #ffb443;
         }
 
         .layer-heading {
             font-size: 1.6rem;
-            color: #60a5fa;
+            color: #ffb443;
             margin: 35px 0 15px 0;
             padding-bottom: 5px;
-            border-bottom: 2px solid rgba(96, 165, 250, 0.2);
+            border-bottom: 2px solid rgba(255, 180, 67, 0.2);
             font-weight: 700;
         }
 
@@ -167,7 +167,7 @@
         }
 
         .section-title {
-            color: #3b82f6;
+            color: #ff4b4b;
             font-size: 1.4rem;
             margin-bottom: 15px;
             font-weight: 700;
@@ -179,7 +179,7 @@
         .timeline {
             position: relative;
             padding-left: 25px;
-            border-left: 2px solid rgba(59, 130, 246, 0.3);
+            border-left: 2px solid rgba(255, 75, 75, 0.3);
             margin: 30px 0;
         }
 
@@ -200,18 +200,19 @@
             top: 23px;
             width: 12px;
             height: 12px;
-            background: #3b82f6;
+            background: #ff4b4b;
             border-radius: 50%;
-            box-shadow: 0 0 8px #3b82f6;
+            box-shadow: 0 0 8px #ff4b4b;
         }
 
         .event-title {
             font-weight: 700;
-            color: #60a5fa;
+            color: #ffb443;
             margin-bottom: 8px;
             font-size: 1.15rem;
         }
 
+        /* --- হাই-কোয়ালিটি গ্যালারি স্টাইল (নো-ব্লার ও ফুল ইমেজ) --- */
         .image-gallery {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -223,7 +224,7 @@
             position: relative;
             overflow: hidden;
             border-radius: 16px;
-            border: 2px solid #3b82f6;
+            border: 2px solid #ff4b4b;
             background: rgba(17, 26, 54, 0.5); 
             display: flex;
             justify-content: center;
@@ -243,8 +244,8 @@
         }
 
         .gallery-box:hover {
-            border-color: #60a5fa;
-            box-shadow: 0 0 25px rgba(96, 165, 250, 0.5);
+            border-color: #ffb443;
+            box-shadow: 0 0 25px rgba(255, 180, 67, 0.5);
             transform: translateY(-5px);
         }
 
@@ -253,8 +254,8 @@
         }
 
         .question-card {
-            background: rgba(59, 130, 246, 0.03);
-            border-left: 4px solid #3b82f6;
+            background: rgba(255, 75, 75, 0.03);
+            border-left: 4px solid #ff4b4b;
             padding: 18px;
             margin-bottom: 20px;
             border-radius: 0 8px 8px 0;
@@ -263,7 +264,7 @@
 
         .question-tag {
             font-weight: 700;
-            color: #3b82f6;
+            color: #ff4b4b;
             margin-bottom: 5px;
             text-transform: uppercase;
             font-size: 0.95rem;
@@ -300,11 +301,11 @@
             }
             .poster {
                 background: linear-gradient(145deg, #111a36, #070d1f) !important;
-                border: 3px solid #3b82f6 !important;
+                border: 3px solid #ff4b4b !important;
                 box-shadow: none !important;
             }
             .gallery-box {
-                border: 2px solid #3b82f6 !important;
+                border: 2px solid #ff4b4b !important;
             }
         }
     </style>
@@ -318,62 +319,62 @@
         <div class="club-name">Chittagong College Physics & Astronomy Club</div>
         <div class="subtitle">CCPAC Presents</div>
         <div class="badge-container">
-            <span class="badge-text">🏆 Semi-Final: The Ultimate Physics Battle 🏆</span>
+            <span class="badge-text">🏆 CCAPC WC Final Special 🏆</span>
         </div>
     </div>
 
     <!-- Match Title -->
     <div class="match-title">
-        FIFA World Cup 2026 Semi-Final <br>
-        <span class="match-vs">আর্জেন্টিনা বনাম ফ্রান্স</span>
+        FIFA World Cup 2026 Grand Final <br>
+        <span class="match-vs">স্পেন বনাম আর্জেন্টিনা</span>
     </div>
 
     <!-- Match Meta Details Section -->
     <div class="match-meta-box">
-        <div class="meta-item">🗓️ <strong>তারিখ:</strong> ১৫ জুলাই, ২০২৬ (বুধবার)</div>
+        <div class="meta-item">🗓️ <strong>তারিখ:</strong> ২০ জুলাই, ২০২৬ (সোমবার)</div>
         <div class="meta-item">⏰ <strong>কিক-অফ:</strong> রাত ০১:০০ টা (বাংলাদেশ সময়)</div>
-        <div class="meta-item">🏟️ <strong>ভেন্যু:</strong> ডালাস স্টেডিয়াম, টেক্সাস (ইউএসএ)</div>
+        <div class="meta-item">🏟️ <strong>ভেন্যু:</strong> মেটলাইফ স্টেডিয়াম, নিউ জার্সি (ইউএসএ)</div>
     </div>
 
     <!-- ================= LAYER 1: REGULAR MATCH SITUATION ================= -->
-    <div class="layer-heading">🛡️ কিলিয়ান এমবাপ্গে বনাম আলবিসেলেস্তে ডিফেন্স (Semi-Final Showdown)</div>
+    <div class="layer-heading">🛡️ লামিন ইয়ামাল বনাম আলবিসেলেস্তে ডিফেন্স (Regular Match)</div>
      
     <div class="section-box">
-        <div class="section-title">⚽ ম্যাচ ব্যাকগ্রাউন্ড ১: ডালাসের মহাকাব্যিক সেমিফাইনাল থ্রিলার</div>
+        <div class="section-title">⚽ ম্যাচ ব্যাকগ্রাউন্ড ১: মেটলাইফের মহাকাব্যিক থ্রিলার</div>
         <p>
-            বিশ্বকাপের মহারণের একেবারে দোরগোড়ায় এসে ডালাসের প্রাঙ্গণে মুখোমুখি হয়েছে দুই চিরপ্রতিদ্বন্দ্বী—আর্জেন্টিনা ও ফ্রান্স। ঘড়ির কাঁটায় তখন বাংলাদেশ সময় ১৫ জুলাই, ২০২৬-এর ঠিক রাত ১:০০ টা। একদিকে ফরাসি গতি ও ক্ষিপ্রতার প্রতীক কিলিয়ান এমবাপ্গে, অন্যদিকে বিশ্বচ্যাম্পিয়নদের সুসংহত রক্ষণভাগ। দুই দলের এই ট্যাকটিক্যাল যুদ্ধের মাঠে বলবিদ্যার চমৎকার সব উপপাদ্য ও গতিবিজ্ঞানের সমীকরণ বাস্তবে রূপ নিচ্ছে। মাঠের সেই রোমাঞ্চকর দুটি দৃশ্যপট নিচে তুলে ধরা হলো:
+            বাংলাদেশের চিরসবুজ গালিচা আর মনকাড়া প্রকৃতি থেকে ঠিক ১২,৬৮৫ কিলোমিটার দূরে, সুদূর আমেরিকার নিউ জার্সির মেটলাইফ স্টেডিয়ামে বসেছে বিশ্ব ফুটবলের সবচেয়ে জমকালো আসর। ঘড়ির কাঁটায় তখন বাংলাদেশ সময় ২০ জুলাই, ২০২৬-এর ঠিক রাত ১:০০ টা। মুখোমুখি ডিফেন্ডিং চ্যাম্পিয়ন আর্জেন্টিনা এবং ইউরোপসেরা স্পেন। একদিকে আলবিসেলেস্তেদের মুকুট ধরে রাখার নিখুঁত প্রেস, অন্যদিকে লা রোহাদের গতিময় ফুটবল। কিন্তু এই রাজকীয় লড়াইয়ের পরতে পরতে লুকিয়ে আছে বলবিদ্যার কিছু জটিল সমীকরণ। মাঠের সেই টানটান উত্তেজনার দুটি দৃশ্যপট নিচে দেওয়া হলো:
         </p>
     </div>
 
     <div class="timeline">
         <!-- Event 1: Brittakar & Friction -->
         <div class="event-card">
-            <div class="event-title">ঘটনা ১: কিলিয়ান এমবাপ্গের ওয়িং ড্রিবলিং ও সেন্ট্রিপিটাল ফোর্স</div>
-            <p>ফরাসি গতিদানব কিলিয়ান এমবাপ্গে <strong>ভর 75 kg</strong> নিয়ে ফ্লাংক ধরে বল নিয়ে ছুটে যাওয়ার সময় <strong>7 ms⁻¹</strong> সমবেগে <strong>5 m</strong> ব্যাসার্ধের একটি বৃত্তাকার বাঁক অতিক্রম করেন। তাকে আটকাতে এসে ক্রিশ্চিয়ান রোমেরো বডি ব্যালেন্স বজায় রাখার চেষ্টা করেন। এমবাপ্গের এই বৃত্তাকার পথে ঘোরার সময় তার জুতোর সঙ্গে মাঠের ঘাসের স্থিতি ঘর্ষণ বলই জুগিয়েছিল প্রয়োজনীয় কেন্দ্রমুখী বল।</p>
+            <div class="event-title">ঘটনা ১: লামিন ইয়ামাল ও দানি ওলমোর বৃত্তাকার কম্বিনেশন এবং ডি পলের ডিফেন্স</div>
+            <p>স্পেনের বিস্ময়বালক লামিন ইয়ামাল <strong>ভর 72 kg</strong> নিয়ে মাঠের ডান প্রান্ত দিয়ে <strong>6 ms⁻¹</strong> সমবেগে <strong>4 m</strong> ব্যাসার্ধের একটি বৃত্তাকার বক্রপথে উইং ধরে ড্রিবলিং করে ডিফেন্ডারকে পরাস্ত করেন এবং ফাঁকায় থাকা দানি ওলমোকে পাস দেন। ওলমো বলটি রিসিভ করে দিক পরিবর্তন করার মুহূর্তেই আর্জেন্টিনার রদ্রিগো ডি পল ওলমোকে থামাতে মাঠের সমান্তরালে ছুটে এসে বডি ট্যাকল করার চেষ্টা করেন। স্প্যানিশ ফরোয়ার্ডদের এই তীব্র ঘূর্ণন গতি বজায় রাখতে বুট ও মাঠের ঘাসের মধ্যকার স্থিতি ঘর্ষণ বলই একমাত্র ভরসা।</p>
         </div>
 
         <!-- Event 2: Linear Dynamics / Mechanics -->
         <div class="event-card">
-            <div class="event-title">ঘটনা ২: এনজো ফার্নান্দেজের লং পাস ও গোলরক্ষক হুগো লরিসের (বা বদলি গোলকিপার) সেভ</div>
-            <p>মাঝমাঠ থেকে এনজো ফার্নান্দেজ নিখুঁত মাপে লম্বা পাস বাড়ালেন হুলিয়ান আলভারেজের উদ্দেশ্যে। আলভারেজ ডি-বক্সের ভেতর স্থির থাকা <strong>450 g</strong> ভরের বলটিতে ভলিতে প্রবল শট নিলেন। তার পা বলটির সংস্পর্শে মাত্র <strong>0.012 s</strong> ছিল এবং বলটি <strong>30 ms⁻¹</strong> বেগে গোলপোস্টের দিকে ধাবিত হয়। বলটি সরাসরি গোলপোস্টের পেছনের ফিক্সড জালে লেগে থিতু হয়, যেখানে জালের স্প্রিং ধ্রুবক ছিল <strong>k = 5000 Nm⁻¹</strong>।</p>
+            <div class="event-title">ঘটনা ২: মেসির পাস, লাউতারোর বুলেট শট ও জালের স্প্রিং অ্যাকশন</div>
+            <p>মাঝমাঠ থেকে লিওনেল মেসি জাদুকরী ড্রিবলিংয়ে বল পাস করলেন লাউতারো মার্টিনেজের উদ্দেশ্যে। লাউতারো ডি-বক্সের ভেতর স্থির থাকা <strong>450 g</strong> ভরের বলটিতে বুট দিয়ে প্রচণ্ড জোরে কিক করলেন। তার পা বলটির সংস্পর্শে মাত্র <strong>0.015 s</strong> ছিল এবং বলটি <strong>32 ms⁻¹</strong> অনুভূমিক বেগে গোলপোস্টের দিকে ছুটে যায়। বলটি গোলপোস্টের নাইলনের জালে আঘাত করা মাত্র জালটি একটি আদর্শ স্প্রিংয়ের মতো আচরণ করে সংকুচিত হয়ে বলটিকে থামিয়ে দেয়। জালের স্প্রিং ধ্রুবক <strong>k = 4608 Nm⁻¹</strong>।</p>
         </div>
     </div>
 
-    <!-- ================= LAYER 2: EXTRA TIME & TENSION ================= -->
-    <div class="layer-heading">🧤 লেয়ার ২: ফ্রি-কিক ও স্নায়ুক্ষয়ী লড়াই (Set-Piece Battle)</div>
+    <!-- ================= LAYER 2: PENALTY SHOOTOUT (TIE BREAKER) ================= -->
+    <div class="layer-heading">🧤 লেয়ার ২: টাইব্রেকার থ্রিলার (Penalty Shootout)</div>
      
     <div class="section-box">
-        <div class="section-title">⚽ ম্যাচ ব্যাকগ্রাউন্ড ২: ডি-বক্সের বাইরে হাই-ভোল্টেজ ফ্রি-কিক</div>
+        <div class="section-title">⚽ ম্যাচ ব্যাকগ্রাউন্ড ২: ১২০ মিনিটের মহানাটক ও স্পট কিক</div>
         <p>
-            নির্ধারিত সময়ে খেলার স্কোরলাইন সমতায় থাকায় ম্যাচ গড়ায় অতিরিক্ত সময়ে। ঠিক ডি-বক্সের কাছাকাছি জায়গায় ফরাসি ডিফেন্ডার ফাউল করায় আর্জেন্টিনা পায় এক বিপজ্জনক ফ্রি-কিক। এই সেট-পিসের ফিজিক্সই নির্ধারণ করে দিতে পারে ফাইনালের টিকিট।
+            নির্ধারিত ও অতিরিক্ত সময় শেষেও ম্যাচ ৩-৩ সমতায় শেষ হওয়ায় মেটলাইফ স্টেডিয়ামের ভাগ্য নির্ধারণের খেলা গড়াল টাইব্রেকারে। স্নায়ুচাপের এই চূড়ান্ত মুহূর্তে কিকারের শটের লিনিয়ার মেকানিক্স এবং গোলরক্ষকের রৈখিক গতির হিসাবই গড়ে দেবে ব্যবধান।
         </p>
     </div>
 
     <div class="timeline">
         <!-- Event 3: Pure Mechanics & Kinematics -->
         <div class="event-card">
-            <div class="event-title">ঘটনা ৩: লিওনেল মেসির কার্ভ ফ্রি-কিক</div>
-            <p>গোলপোস্ট থেকে ঠিক <strong>22 m</strong> দূরত্বে বল স্থাপন করলেন লিওনেল মেসি। তিনি প্রাচীর (Wall) ভেদ করে বলটিকে অনুভূমিকের সাথে নির্দিষ্ট কোণে শূন্যে ভাসিয়ে গোলবারের দিকে কিক করেন। বলটি শূন্যে যাত্রা করে মাত্র <strong>0.8 s</strong> সময়ে গোললাইন অতিক্রম করে জালে জড়ায়। এই ক্ষণস্থায়ী গতিপথে অভিকর্ষজ ত্বরণ এবং বাতাসের প্রভাবকে হিসাবে ধরে মেসির ফ্রি-কিকের নিখুঁত মেকানিক্স এখন পরীক্ষার টেবিলে।</p>
+            <div class="event-title">ঘটনা ৩: এমি মার্টিনেজের বাজপাখি ডাইভ</div>
+            <p>টাইব্রেকারের শেষ ও নিষ্পত্তিমূলক শট নিতে এলেন স্পেনের তারকা মিডফিল্ডার রদ্রি। গোলপোস্টের ঠিক <strong>11 m</strong> দূরে থাকা পেনাল্টি স্পট থেকে তিনি বলটিকে অনুভূমিকভাবে সরাসরি পোস্টের ডান কোণা লক্ষ্য করে শট নিলেন। বলটি শট হওয়ার সাথে সাথে <strong>0.25 s</strong> এর মধ্যে গোললাইন অতিক্রম করার জন্য ধাবিত হয়। আর্জেন্টিনার বাজপাখি গোলরক্ষক এমিলিয়ানো মার্টিনেজ বল ছুটার ঠিক <strong>0.05 s</strong> পর (রিফ্লেক্স টাইম) গোলপোস্টের মাঝখান থেকে ডানদিকে <strong>6 ms⁻¹</strong> সুষম বেগে ঝাঁপিয়ে পড়লেন। গোলপোস্টের কেন্দ্র থেকে ডান কোণার দূরত্ব <strong>3.66 m</strong>।</p>
         </div>
     </div>
 
@@ -381,39 +382,39 @@
         *(ধরে নাও, অভিকর্ষজ ত্বরণ <strong>g = 9.8 ms⁻²</strong>, সমস্ত শক্তি লস উপেক্ষণীয় এবং অনুভূমিক গতির ক্ষেত্রে বাতাসের বাধা নেই)*
     </p>
 
-    <!-- Image Gallery -->
+    <!-- 🌟 ইমেজ গ্যালারি 🌟 -->
     <div class="image-gallery">
         <div class="gallery-box">
-            <img class="gallery-img" src="https://i.postimg.cc/rw2Qdcjs/images.jpg" alt="Semi-Final Action 1">
+            <img class="gallery-img" src="https://i.postimg.cc/rw2Qdcjs/images.jpg" alt="Final Action 3">
         </div>
         <div class="gallery-box">
-            <img class="gallery-img" src="https://i.postimg.cc/VkMsR9Xz/749300541-122218644314370992-7887761982620472799-n.jpg" alt="Semi-Final Action 2">
+            <img class="gallery-img" src="https://i.postimg.cc/VkMsR9Xz/749300541-122218644314370992-7887761982620472799-n.jpg" alt="Final Action 4">
         </div>
     </div>
 
     <!-- Questions Section -->
-    <div class="section-box" style="background: rgba(59, 130, 246, 0.01); border-color: rgba(59, 130, 246, 0.15);">
-        <div class="section-title">❓ মেকানিক্স ও স্প্রিং চ্যালেঞ্জ (Semi-Final Physics Challenges)</div>
+    <div class="section-box" style="background: rgba(255, 75, 75, 0.01); border-color: rgba(255, 75, 75, 0.15);">
+        <div class="section-title">❓ মেকানিক্স ও স্প্রিং চ্যালেঞ্জ (Double Layer Physics Challenges)</div>
 
         <!-- Part 1 Questions -->
         <div style="margin-bottom: 25px;">
-            <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.1rem;">🔹 পার্ট-১: অন-ফিল্ড গতি ও শক্তি বিশ্লেষণ (Regular Match)</h4>
+            <h4 style="color: #ffb443; margin-bottom: 10px; font-size: 1.1rem;">🔹 পার্ট-১: অন-ফিল্ড গতি ও শক্তি বিশ্লেষণ (Regular Match)</h4>
             <div class="question-card">
                 <div class="question-tag">প্রশ্ন (ক)</div>
-                <p>ঘটনা ১ অনুযায়ী, কিলিয়ান এমবাপ্গে যখন বক্রপথে বাঁক নিচ্ছিলেন তখন তার ওপর প্রযুক্ত কেন্দ্রমুখী বলের (Centripetal Force) মান কত ছিল? এমবাপ্গে যদি না পিছলে ওই নির্দিষ্ট বেগে মোড় সফলভাবে শেষ করতে চান, তবে বুট ও মাঠের ঘাসের মধ্যকার ন্যূনতম স্থিতি ঘর্ষণ গুণাঙ্ক (&mu;<sub>s</sub>) কত হতে হবে?</p>
+                <p>ঘটনা ১ অনুযায়ী, লামিন ইয়ামাল যখন বক্রপথে বাঁক নিচ্ছিলেন তখন তার ওপর প্রযুক্ত কেন্দ্রমুখী বলের (Centripetal Force) মান কত ছিল? ইয়ামাল যদি না পিছলে ওই নির্দিষ্ট বেগে মোড় শেষ করতে চান, তবে বুট ও মাঠের ঘাসের মধ্যকার ন্যূনতম স্থিতি ঘর্ষণ গুণাঙ্ক (&mu;<sub>s</sub>) কত হতে হবে?</p>
             </div>
             <div class="question-card">
-                <div class="question-tag">প্রশ্ন (পরামর্শ/খ)</div>
-                <p>ঘটনা ২ এর তথ্যের ভিত্তিতে, হুলিয়ান আলভারেজের শটের কারণে বলের ওপর প্রযুক্ত বলের ঘাত (Impulse) এবং গড় বলের (Average Force) মান নির্ণয় করো। কাজ-শক্তি উপপাদ্য ব্যবহার করে বলটি জালের সংস্পর্শে এসে স্থির হওয়ার পূর্ব পর্যন্ত গোলপোস্টের জালটি সর্বোচ্চ কত দূরত্ব (x) সংকুচিত হয়েছিল তা বের করো।</p>
+                <div class="question-tag">প্রশ্ন (খ)</div>
+                <p>ঘটনা ২ এর তথ্যের ভিত্তিতে, লাউতারো মার্টিনেজের শটের কারণে বলের ওপর প্রযুক্ত বলের ঘাত (Impulse) এবং গড় বলের (Average Force) মান নির্ণয় করো। কাজ-শক্তি উপপাদ্য ব্যবহার করে বলটি জালের সংস্পর্শে এসে স্থির হওয়ার পূর্ব পর্যন্ত গোলপোস্টের জালটি সর্বোচ্চ কত দূরত্ব (x) সংকুচিত হয়েছিল তা বের করো।</p>
             </div>
         </div>
 
         <!-- Part 2 Questions -->
         <div>
-            <h4 style="color: #60a5fa; margin-bottom: 10px; font-size: 1.1rem;">🔹 পার্ট-২: সেট-পিস ও কাইনেম্যাটিক্স (Set-Piece Battle)</h4>
+            <h4 style="color: #ffb443; margin-bottom: 10px; font-size: 1.1rem;">🔹 পার্ট-২: টাইব্রেকার ও লিনিয়ার মেকানিক্স (Tie Breaker)</h4>
             <div class="question-card">
                 <div class="question-tag">প্রশ্ন (গ)</div>
-                <p>ঘটনা ৩ এর ডেটা থেকে মেসির ফ্রি-কিক করা বলটির প্রাথমিক বেগ ও প্রক্ষেপণ কোণ অথবা আনুভূমিক ও উল্লম্ব উপাংশের সম্পর্ক বিশ্লেষণ করে গোললাইন অতিক্রম করার মুহূর্তের বেগ নির্ণয় করো।</p>
+                <p>ঘটনা ৩ এর ডেটা থেকে রদ্রির শট করা বলটির অনুভূমিক বেগ নির্ণয় করো। রৈখিক গতিবিদ্যার সূত্র ও সময় ব্যবহার করে গাণিতিকভাবে বিশ্লেষণ করো যে, এমি মার্টিনেজ বলটি গোললাইন অতিক্রম করার আগেই তার নাগাল পাবেন কি না, অর্থাৎ আর্জেন্টিনা কি বিশ্বচ্যাম্পিয়ন হতে পারবে?</p>
             </div>
         </div>
     </div>
@@ -426,3 +427,4 @@
 
 </body>
 </html>
+```[cite: 1]
