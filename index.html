@@ -170,11 +170,11 @@
 
         <div class="flex overflow-x-auto space-x-6 pb-4 no-scrollbar snap-x">
             
-            <!-- Update 1 -->
+            <!-- Update 1: Raihan IMO (Fixed Image Fit) -->
             <div onclick="openUpdateModal('1')" class="min-w-[320px] sm:min-w-[360px] max-w-[380px] snap-start glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-xl hover-glow flex flex-col justify-between group cursor-pointer">
                 <div>
-                    <div class="relative h-48 w-full bg-slate-900 overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/silver.jpeg" alt="Raihan IMO Silver Medal" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="relative h-48 w-full bg-[#0f172a] overflow-hidden flex items-center justify-center">
+                        <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/silver.jpeg" alt="Raihan IMO Silver Medal" class="w-full h-full object-contain group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-lg text-[10px] text-cyan-400 font-bold border border-slate-800"><i class="fa-solid fa-trophy mr-1 text-amber-400"></i> International Achievement</span>
                     </div>
                     <div class="p-6 space-y-3">
@@ -191,11 +191,11 @@
                 </div>
             </div>
 
-            <!-- Update 2 -->
+            <!-- Update 2: Tokens of Honour (3 Photos Configured) -->
             <div onclick="openUpdateModal('2')" class="min-w-[320px] sm:min-w-[360px] max-w-[380px] snap-start glass-card rounded-2xl border border-slate-800 overflow-hidden shadow-xl hover-glow flex flex-col justify-between group cursor-pointer">
                 <div>
                     <div class="relative h-48 w-full bg-slate-900 overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h3.jpeg" alt="Token of Honour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h1.jpeg" alt="Token of Honour" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                         <span class="absolute top-3 left-3 bg-slate-950/80 px-3 py-1 rounded-lg text-[10px] text-blue-400 font-bold border border-slate-800"><i class="fa-solid fa-images mr-1"></i> Multiple Photos</span>
                     </div>
                     <div class="p-6 space-y-3">
@@ -581,7 +581,7 @@
             </button>
 
             <div class="relative w-full h-[280px] sm:h-[360px] bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-inner group">
-                <img id="modal-slider-image" src="" alt="Update Image" class="w-full h-full object-cover transition-all duration-500">
+                <img id="modal-slider-image" src="" alt="Update Image" class="w-full h-full object-contain bg-slate-950 transition-all duration-500">
                 <button onclick="prevModalImage()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-slate-950/80 hover:bg-cyan-500 hover:text-slate-950 text-white w-9 h-9 rounded-full flex items-center justify-center transition border border-slate-700 shadow-lg cursor-pointer">
                     <i class="fa-solid fa-chevron-left"></i>
                 </button>
@@ -632,6 +632,8 @@
                 title: "Tokens of Honour Conferred upon Honorable Principal, Vice Principal, and Moderator",
                 date: "Date: 29-03-2026",
                 images: [
+                    "https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h1.jpeg",
+                    "https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h2.jpeg",
                     "https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h3.jpeg"
                 ],
                 content: `Today, on behalf of the Executive Panel 2025–26 of Chattogram College Physics & Astronomy Club (CCPAC), tokens of honour were conferred upon Principal Prof. Mohammad Mozahidul Islam Chowdhury, Vice Principal Md. Shawkat Iqbal Faruqueee, and Moderator Md. Zahirul Islam in sincere recognition of their unwavering support.`
@@ -698,7 +700,7 @@
                 section: document.getElementById('mSection').value,
                 roll: document.getElementById('mRoll').value,
                 phone: document.getElementById('mPhone').value,
-                whatsapp: document.getElementById('mWhatsapp.value') || document.getElementById('mWhatsapp').value,
+                whatsapp: document.getElementById('mWhatsapp').value,
                 skills: Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(cb => cb.value).join(', '),
                 skillDetails: document.getElementById('mSkillDetails').value,
                 olympiad: document.getElementById('mOlympiad').value,
@@ -727,11 +729,10 @@
             } catch (error) {
                 console.error('Submission error:', error);
                 alert('Something went wrong. Please try again later.');
-                submitBtn.innerHTML = originalBtnText;
+                submitBtn.innerHTML = originalBtnTest;
                 submitBtn.disabled = false;
             }
         });
     </script>
 </body>
 </html>
-```[cite: 1]
