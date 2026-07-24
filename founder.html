@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Founding Pioneers - CCPAC</title>
+    <title>Founders - CCPAC | Chittagong College Physics & Astronomy Club</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -19,10 +17,6 @@
                         spaceCard: '#0b1329',
                         neonCyan: '#06b6d4',
                         neonBlue: '#3b82f6',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        poppins: ['Poppins', 'sans-serif'],
                     }
                 }
             }
@@ -34,16 +28,8 @@
             image-rendering: crisp-edges;
         }
         .glass-card {
-            background: linear-gradient(135deg, rgba(11, 19, 41, 0.8) 0%, rgba(3, 7, 18, 0.9) 100%);
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.7) 0%, rgba(3, 7, 18, 0.8) 100%);
             backdrop-filter: blur(20px);
-        }
-        .glow-box {
-            transition: all 0.4s ease;
-        }
-        .glow-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 35px rgba(6, 182, 212, 0.35);
-            border-color: rgba(6, 182, 212, 0.6);
         }
     </style>
 </head>
@@ -56,176 +42,183 @@
     <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30 crisp-img">
-                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-11 h-11 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/35 crisp-img">
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">CCPAC</span>
             </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide text-slate-300">
                 <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
-                <a href="index.html#explore-section" class="hover:text-cyan-400 transition">Explore</a>
+                <a href="about.html" class="hover:text-cyan-400 transition">About Us</a>
+                <a href="team.html" class="hover:text-cyan-400 transition">Executives</a>
                 <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
-                <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
-                <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
-                <a href="contact--contact-us.html" class="hover:text-cyan-400 transition">Contact</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
             </nav>
-            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/25">
+            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-cyan-500/25">
                 Join CCPAC
             </a>
         </div>
     </header>
 
-    <!-- Back to Home / About -->
-    <div class="max-w-6xl mx-auto px-6 pt-8">
-        <a href="about.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition font-sans">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span>Back to About Us</span>
-        </a>
-    </div>
-
-    <!-- Founders Hero Section -->
-    <section class="max-w-5xl mx-auto px-6 pt-8 pb-10 text-center space-y-6">
-        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
-            <i class="fa-solid fa-medal"></i>
-            <span>Visionary Leadership</span>
+    <!-- Page Header -->
+    <section class="max-w-7xl mx-auto px-6 pt-16 pb-10 text-center space-y-4">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest">
+            <i class="fa-solid fa-award"></i>
+            <span>Visionary Minds</span>
         </div>
-        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-poppins">
-            Founding Pioneers
+        <h1 class="text-4xl sm:text-5xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">
+            CCPAC Founders
         </h1>
-        <p class="text-slate-300 text-sm sm:text-base max-w-3xl mx-auto">
-            The brilliant minds who laid the foundation of Chittagong College Physics & Astronomy Club on February 13, 2025, bringing international prestige and academic excellence.
+        <p class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base">
+            Meet the pioneers who laid down the cornerstone of the Chittagong College Physics & Astronomy Club on 13 February 2025.
         </p>
     </section>
 
-    <!-- Founders Showcase Section -->
-    <section class="max-w-6xl mx-auto px-6 py-8 space-y-16">
-
-        <!-- Founder 1: Aditya Das Jitu -->
-        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl glow-box">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-5 relative group">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                    <img src="https://i.ibb.co.com/jvp2g55p/Jitu.jpg" alt="Aditya Das Jitu" class="relative w-full h-[360px] sm:h-[400px] object-cover rounded-2xl border-2 border-cyan-500/40 shadow-xl crisp-img" onerror="this.src='https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg'">
-                </div>
-                <div class="lg:col-span-7 space-y-5">
-                    <div>
-                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins"><i class="fa-solid fa-star mr-1"></i> Founding Pioneer</span>
-                        <h2 class="text-3xl sm:text-4xl font-black text-white font-poppins mt-1">Aditya Das Jitu</h2>
+    <!-- Founders Grid Section -->
+    <section class="max-w-7xl mx-auto px-6 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Founder 1: Mohammad Abdullah -->
+            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800/80 shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-cyan-500/50 transition duration-300">
+                <div class="absolute -right-16 -top-16 w-40 h-40 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="space-y-6">
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-lg shadow-cyan-500/20 bg-slate-950">
+                        <img src="https://i.ibb.co.com/placeholder-abdullah.jpg" alt="Mohammad Abdullah" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80'">
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-300 font-sans">
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-graduation-cap text-cyan-400 text-base shrink-0"></i>
-                            <span>Chittagong College ’25</span>
+                    <div class="text-center space-y-1">
+                        <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition">Mohammad Abdullah</h3>
+                        <p class="text-xs font-semibold text-cyan-400 tracking-wide">Founder</p>
+                        <p class="text-xs text-slate-400">Chittagong College '24</p>
+                    </div>
+                    <div class="space-y-2 pt-2 text-xs text-slate-300 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-star text-cyan-400"></i>
+                            <span>APhO 2023 Participant</span>
                         </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-award text-cyan-400 text-base shrink-0"></i>
-                            <span class="font-semibold text-cyan-300">Bangladesh's First APhO Bronze Medalist 2025</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-medal text-cyan-400 text-base shrink-0"></i>
-                            <span>Physics Cup 2025 Honorable Mention</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-earth-americas text-cyan-400 text-base shrink-0"></i>
-                            <span>APhO & EuPhO 2024 Participant</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-atom text-cyan-400 text-base shrink-0"></i>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-medal text-cyan-400"></i>
                             <span>IPhO TST Camper</span>
                         </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-trophy text-cyan-400 text-base shrink-0"></i>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-trophy text-cyan-400"></i>
                             <span>3× BdPhO National Winner</span>
                         </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3 sm:col-span-2">
-                            <i class="fa-solid fa-star text-cyan-400 text-base shrink-0"></i>
-                            <span>2× BDOAA National Winner</span>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-award text-cyan-400"></i>
+                            <span>BdOAA National Winner</span>
                         </div>
                     </div>
+                </div>
+                <div class="pt-6 mt-6 border-t border-slate-800 flex justify-center space-x-4 text-slate-400 text-sm">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
-        </div>
 
-        <!-- Founder 2: Rahul Nandi -->
-        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl glow-box">
-            <div class="grid lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-7 space-y-5 order-2 lg:order-1">
-                    <div>
-                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins"><i class="fa-solid fa-star mr-1"></i> Founding Pioneer</span>
-                        <h2 class="text-3xl sm:text-4xl font-black text-white font-poppins mt-1">Rahul Nandi</h2>
+            <!-- Founder 2: Rahul Nandi -->
+            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800/80 shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-cyan-500/50 transition duration-300">
+                <div class="absolute -right-16 -top-16 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="space-y-6">
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-lg shadow-cyan-500/20 bg-slate-950">
+                        <img src="https://i.ibb.co.com/placeholder-rahul.jpg" alt="Rahul Nandi" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80'">
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-slate-300 font-sans">
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-graduation-cap text-cyan-400 text-base shrink-0"></i>
-                            <span>Chittagong College ’25</span>
+                    <div class="text-center space-y-1">
+                        <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition">Rahul Nandi</h3>
+                        <p class="text-xs font-semibold text-cyan-400 tracking-wide">Founder</p>
+                        <p class="text-xs text-slate-400">Chittagong College '24</p>
+                    </div>
+                    <div class="space-y-2 pt-2 text-xs text-slate-300 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-star text-cyan-400"></i>
+                            <span>Physics & Astronomy Enthusiast</span>
                         </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-award text-cyan-400 text-base shrink-0"></i>
-                            <span class="font-semibold text-cyan-300">Bangladesh's First EuPhO Honourable Mention 2024</span>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-medal text-cyan-400"></i>
+                            <span>Olympiad Contributor</span>
                         </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-medal text-cyan-400 text-base shrink-0"></i>
-                            <span>APhO 2025 Honourable Mention</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-shield-halved text-cyan-400 text-base shrink-0"></i>
-                            <span>Physics Cup 2025 Bronze Medalist</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-atom text-cyan-400 text-base shrink-0"></i>
-                            <span>IPhO TST Camper</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-trophy text-cyan-400 text-base shrink-0"></i>
-                            <span>BdPhO 2025 National Champion</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-award text-cyan-400 text-base shrink-0"></i>
-                            <span>5× BdPhO National Winner</span>
-                        </div>
-                        <div class="bg-slate-950/60 p-3.5 rounded-xl border border-slate-800 flex items-center space-x-3">
-                            <i class="fa-solid fa-star text-cyan-400 text-base shrink-0"></i>
-                            <span>2× BDOAA National Winner</span>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-trophy text-cyan-400"></i>
+                            <span>Academic Coordinator</span>
                         </div>
                     </div>
                 </div>
-                <div class="lg:col-span-5 relative group order-1 lg:order-2">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                    <img src="https://i.ibb.co.com/Wv4K4N8t/Rahul.jpg" alt="Rahul Nandi" class="relative w-full h-[360px] sm:h-[400px] object-cover rounded-2xl border-2 border-cyan-500/40 shadow-xl crisp-img" onerror="this.src='https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg'">
+                <div class="pt-6 mt-6 border-t border-slate-800 flex justify-center space-x-4 text-slate-400 text-sm">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
-        </div>
 
+            <!-- Founder 3: Aditya Das Jitu -->
+            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800/80 shadow-2xl flex flex-col justify-between relative overflow-hidden group hover:border-cyan-500/50 transition duration-300">
+                <div class="absolute -right-16 -top-16 w-40 h-40 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                <div class="space-y-6">
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-2xl overflow-hidden border-2 border-cyan-400/50 shadow-lg shadow-cyan-500/20 bg-slate-950">
+                        <img src="https://i.ibb.co.com/placeholder-aditya.jpg" alt="Aditya Das Jitu" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 crisp-img" onerror="this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80'">
+                    </div>
+                    <div class="text-center space-y-1">
+                        <h3 class="text-xl font-bold text-slate-100 group-hover:text-cyan-400 transition">Aditya Das Jitu</h3>
+                        <p class="text-xs font-semibold text-cyan-400 tracking-wide">Founder</p>
+                        <p class="text-xs text-slate-400">Chittagong College '24</p>
+                    </div>
+                    <div class="space-y-2 pt-2 text-xs text-slate-300 bg-slate-950/60 p-4 rounded-xl border border-slate-800/80">
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-star text-cyan-400"></i>
+                            <span>Astronomy & Research Lover</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-medal text-cyan-400"></i>
+                            <span>Creative Strategist</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fa-solid fa-trophy text-cyan-400"></i>
+                            <span>Club Operations Lead</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-6 mt-6 border-t border-slate-800 flex justify-center space-x-4 text-slate-400 text-sm">
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="w-9 h-9 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <!-- Professional Footer -->
-    <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
-                <ul class="space-y-2 text-xs">
+    <!-- Footer matching site theme -->
+    <footer class="bg-spaceCard border-t border-slate-800/80 mt-20 pt-16 pb-12 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
+            
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm tracking-wide">ABOUT</h4>
+                <ul class="space-y-2.5 text-sm">
                     <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
                     <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
                     <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
                     <li><a href="team.html" class="hover:text-cyan-400 transition">Executives</a></li>
                 </ul>
             </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="event.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
+
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm tracking-wide">EVENTS</h4>
+                <ul class="space-y-2.5 text-sm">
+                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
                     <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
                     <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
                 </ul>
             </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
-                <ul class="space-y-2 text-xs">
+
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm tracking-wide">RESOURCES</h4>
+                <ul class="space-y-2.5 text-sm">
                     <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
                     <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
                 </ul>
             </div>
-            <div class="space-y-3">
-                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
-                <ul class="space-y-2 text-xs">
+
+            <div class="space-y-4">
+                <h4 class="text-white font-bold text-sm tracking-wide">QUICK LINKS</h4>
+                <ul class="space-y-2.5 text-sm">
                     <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
                     <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
                     <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
@@ -233,19 +226,29 @@
                     <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
                 </ul>
             </div>
-            <div class="space-y-3 lg:col-span-1 sm:col-span-2">
-                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
-                <p class="text-xs text-slate-400">Chittagong College, College Road, Chattogram.</p>
-                <p class="text-xs text-slate-400">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
-                <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
-                    <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
-                    <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
+
+            <div class="space-y-4 lg:col-span-1 sm:col-span-2">
+                <h4 class="text-white font-bold text-sm tracking-wide">CONTACT & SUBSCRIBE</h4>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    Chittagong College, College Road, Chattogram.
+                </p>
+                <p class="text-xs text-slate-400">
+                    Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a>
+                </p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-2">
+                    <input type="email" placeholder="Your email" required class="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-sm text-slate-200 focus:outline-none focus:border-cyan-400">
+                    <button type="submit" class="w-full py-2 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-sm transition shadow-md">
+                        SUBSCRIBE
+                    </button>
                 </form>
             </div>
+
         </div>
-        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
             <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
-            <div class="flex space-x-5 text-slate-300 text-base">
+            
+            <div class="flex space-x-4 text-slate-300 text-base">
                 <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
