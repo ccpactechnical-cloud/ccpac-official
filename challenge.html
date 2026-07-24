@@ -46,18 +46,6 @@
             box-shadow: 0 0 35px rgba(6, 182, 212, 0.35);
             border-color: rgba(6, 182, 212, 0.6);
         }
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-            height: 6px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-track {
-            background: rgba(3, 7, 18, 0.5);
-            border-radius: 8px;
-        }
-        .custom-scrollbar::-webkit-scrollbar-thumb {
-            background: rgba(6, 182, 212, 0.4);
-            border-radius: 8px;
-        }
     </style>
 </head>
 <body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
@@ -120,7 +108,7 @@
             <h2 class="text-2xl sm:text-4xl font-black text-white mt-3 font-poppins">
                 FIFA World Cup 2026 Physics Specials
             </h2>
-            <p class="text-slate-400 text-sm font-sans">Interactive sports-mechanics physics showdowns (View shortened questions inside)</p>
+            <p class="text-slate-400 text-sm font-sans">Interactive sports-mechanics physics showdowns</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -138,10 +126,10 @@
                     </p>
                 </div>
                 <div>
-                    <button onclick="openModal('finalModal')" class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-red-500 to-amber-600 hover:from-red-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-3 rounded-xl text-sm transition shadow-lg shadow-red-500/25 w-full cursor-pointer font-poppins">
-                        <span>View Grand Final Inside</span>
+                    <a href="final.html" class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-red-500 to-amber-600 hover:from-red-400 hover:to-amber-500 text-slate-950 font-bold px-5 py-3 rounded-xl text-sm transition shadow-lg shadow-red-500/25 w-full cursor-pointer font-poppins">
+                        <span>View Grand Final Details</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -158,10 +146,10 @@
                     </p>
                 </div>
                 <div>
-                    <button onclick="openModal('semiModal')" class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-5 py-3 rounded-xl text-sm transition shadow-lg shadow-cyan-500/25 w-full cursor-pointer font-poppins">
-                        <span>View Semifinal Inside</span>
+                    <a href="semi.html" class="inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-5 py-3 rounded-xl text-sm transition shadow-lg shadow-cyan-500/25 w-full cursor-pointer font-poppins">
+                        <span>View Semifinal Details</span>
                         <i class="fa-solid fa-arrow-right text-xs"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -278,163 +266,6 @@
         </div>
 
     </section>
-
-    <!-- ================= MODALS FOR DIRECT VIEW INSIDE THE PAGE (SHORTENED QUESTIONS) ================= -->
-
-    <!-- Grand Final Modal -->
-    <div id="finalModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-        <div class="glass-card max-w-4xl w-full max-h-[92vh] overflow-y-auto custom-scrollbar rounded-3xl border border-red-500/40 p-6 sm:p-10 space-y-8 relative shadow-2xl text-slate-100">
-            <button onclick="closeModal('finalModal')" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg font-bold w-10 h-10 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center transition cursor-pointer z-20">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <!-- Final Poster Content Inside -->
-            <div class="space-y-6">
-                <div class="text-center border-b border-red-500/30 pb-6">
-                    <img class="w-24 h-24 mx-auto object-cover rounded-full border-2 border-red-500 mb-3 crisp-img" src="https://i.postimg.cc/V0Ytxhjx/3.jpg" alt="Logo">
-                    <h2 class="text-2xl font-black text-red-400 font-poppins">Chittagong College Physics & Astronomy Club</h2>
-                    <p class="text-slate-400 text-sm mt-1 font-sans">🏆 Grand Final: The Ultimate Physics Battle 🏆</p>
-                </div>
-
-                <div class="text-center space-y-2">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white font-poppins">FIFA World Cup 2026 Grand Final</h3>
-                    <p class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-400 font-poppins">স্পেন বনাম আর্জেন্টিনা</p>
-                </div>
-
-                <div class="flex justify-around flex-wrap gap-4 bg-slate-900/60 p-4 rounded-xl border border-red-500/20 text-xs sm:text-sm text-slate-300 font-sans">
-                    <div>🗓️ <strong>তারিখ:</strong> ২০ জুলাই, ২০২৬</div>
-                    <div>⏰ <strong>কিক-অফ:</strong> রাত ০১:০০ টা</div>
-                    <div>🏟️ <strong>ভেন্যু:</strong> মেটলাইফ স্টেডিয়াম, নিউ জার্সি</div>
-                </div>
-
-                <div class="space-y-4 text-sm sm:text-base leading-relaxed text-slate-300 bg-slate-900/40 p-6 rounded-2xl border border-slate-800 font-sans">
-                    <h4 class="text-amber-400 font-bold text-lg font-poppins">🛡️ লামিন ইয়ামাল বনাম আলবিসেলেস্তে ডিফেন্স (Regular Match)</h4>
-                    <p>১২৬৮৫ কিমি দূরে আমেরিকার মেটলাইফ স্টেডিয়ামে ২০ জুলাই ২০২৬ রাতে মুখোমুখি ডিফেন্ডিং চ্যাম্পিয়ন আর্জেন্টিনা ও স্পেন।</p>
-                    <div class="space-y-3 pl-4 border-l-2 border-red-500">
-                        <p><strong>ঘটনা ১:</strong> লামিন ইয়ামাল (ভর 72 kg) মাঠের ডান প্রান্তে 6 ms⁻¹ সমবেগে 4 m ব্যাসার্ধের বৃত্তাকার পথে ড্রিবলিং করে ডিফেন্ডারকে পরাস্ত করেন এবং দানি ওলমোকে পাস দেন। রদ্রিগো ডি পল ট্যাকল করার চেষ্টা করেন।</p>
-                        <p><strong>ঘটনা ২:</strong> মেসি পাস বাড়ান লাউতারো মার্টিনেজের উদ্দেশ্যে। লাউতারো 450 g ভরের বলটিতে 0.015 s সময় ধরে কিক করেন এবং বল 32 ms⁻¹ বেগে জালে আঘাত করে (স্প্রিং ধ্রুবক k = 4608 Nm⁻¹)।</p>
-                    </div>
-
-                    <h4 class="text-amber-400 font-bold text-lg pt-4 font-poppins">🧤 লেয়ার ২: টাইব্রেকার থ্রিলার (Penalty Shootout)</h4>
-                    <p>৩-৩ সমতায় শেষ হওয়ায় খেলা টাইব্রেকারেড়ায়। 11 m দূরে পেনাল্টি স্পট থেকে রদ্রি শট নেন (0.25 s এ গোললাইন)। এমি মার্টিনেজ 0.05 s পর 6 ms⁻¹ বেগে ডাইভ দেন (কেন্দ্র থেকে কোণার দূরত্ব 3.66 m)।</p>
-                </div>
-
-                <!-- Images Gallery inside modal -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="rounded-xl overflow-hidden border border-red-500/40 bg-slate-950 p-2 flex items-center justify-center h-64">
-                        <img class="max-h-full w-auto object-contain crisp-img" src="https://i.postimg.cc/rw2Qdcjs/images.jpg" alt="Action 1">
-                    </div>
-                    <div class="rounded-xl overflow-hidden border border-red-500/40 bg-slate-950 p-2 flex items-center justify-center h-64">
-                        <img class="max-h-full w-auto object-contain crisp-img" src="https://i.postimg.cc/VkMsR9Xz/749300541-122218644314370992-7887761982620472799-n.jpg" alt="Action 2">
-                    </div>
-                </div>
-
-                <!-- Shortened Questions -->
-                <div class="space-y-4 bg-slate-900/60 p-6 rounded-2xl border border-red-500/20 font-sans">
-                    <h4 class="text-red-400 font-bold text-lg font-poppins">❓ সংক্ষিপ্ত চ্যালেঞ্জসমূহ</h4>
-                    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs sm:text-sm">
-                        <strong class="text-red-400">প্রশ্ন (ক):</strong> ইয়ামালের কেন্দ্রমুখী বল ও ন্যূনতম স্থিতি ঘর্ষণ গুণাঙ্ক কত?
-                    </div>
-                    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs sm:text-sm">
-                        <strong class="text-red-400">প্রশ্ন (খ):</strong> লাউতারোর শটের ঘাত, গড় বল এবং জালের সর্বোচ্চ সংকোচন কত?
-                    </div>
-                    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs sm:text-sm">
-                        <strong class="text-red-400">প্রশ্ন (খ / গ):</strong> রদ্রির শটের অনুভূমিক বেগ কত এবং এমি মার্টিনেজ কি বল আটকাতে পারবেন?
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Semifinal Modal -->
-    <div id="semiModal" class="fixed inset-0 z-50 hidden bg-black/85 backdrop-blur-md flex items-center justify-center p-4">
-        <div class="glass-card max-w-4xl w-full max-h-[92vh] overflow-y-auto custom-scrollbar rounded-3xl border border-cyan-500/40 p-6 sm:p-10 space-y-8 relative shadow-2xl text-slate-100">
-            <button onclick="closeModal('semiModal')" class="absolute top-6 right-6 text-slate-400 hover:text-white text-lg font-bold w-10 h-10 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center transition cursor-pointer z-20">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <!-- Semifinal Content Inside -->
-            <div class="space-y-6">
-                <div class="text-center border-b border-cyan-500/30 pb-6">
-                    <img class="w-24 h-24 mx-auto object-cover rounded-full border-2 border-cyan-400 mb-3 crisp-img bg-slate-900/50" src="https://i.postimg.cc/V0Ytxhjx/3.jpg" alt="Logo">
-                    <h2 class="text-2xl font-black text-cyan-400 font-poppins">Chittagong College Physics & Astronomy Club</h2>
-                    <p class="text-slate-400 text-sm mt-1 font-sans">🏆 Special Match-Day Brain-Teaser 🏆</p>
-                </div>
-
-                <div class="text-center space-y-2">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-white font-poppins">FIFA World Cup 2026 Semifinal</h3>
-                    <p class="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">আর্জেন্টিনা বনাম ইংল্যান্ড</p>
-                </div>
-
-                <div class="space-y-4 text-sm sm:text-base leading-relaxed text-slate-300 bg-slate-900/40 p-6 rounded-2xl border border-slate-800 font-sans">
-                    <h4 class="text-cyan-400 font-bold text-lg font-poppins">⚽ ম্যাচ ব্যাকগ্রাউন্ড</h4>
-                    <p>
-                        ২০২৬ সালের ফিফা বিশ্বকাপের দ্বিতীয় সেমিফাইনালে মুখোমুখি হয়েছে দুই চিরপ্রতিদ্বন্দ্বী আর্জেন্টিনা ও ইংল্যান্ড। ম্যাচের বয়স তখন ৮৫ মিনিট। গ্যালারিজুড়ে রুদ্ধশ্বাস উত্তেজনা, স্কোরলাইন ১-১ গোলে ড্র। ঠিক এই মুহূর্তে ইংল্যান্ডের ডি-বক্সের ঠিক বাইরে একটি ফ্রি-কিক পেল আর্জেন্টিনা। বলটি গোলপোস্ট থেকে ঠিক <strong>r = 25 m</strong> দূরে মাটিতে স্থির অবস্থায় আছে।
-                    </p>
-                    <p style="margin-top: 10px; color: #a5b4fc; font-weight: 600;">
-                        নিচে মাঠের পরপর ঘটে যাওয়া তিনটি ঘটনার ক্রমানুসার দেওয়া হলো। ফিজিক্সের গতিবিদ্যা ও ভেক্টরের সূত্র ব্যবহার করে ঘটনাগুলোর গাণিতিক সত্যতা যাচাই করো:
-                    </p>
-
-                    <div class="timeline mt-4 pl-4 border-l-2 border-cyan-400 space-y-4">
-                        <div>
-                            <strong class="text-cyan-400">ঘটনা ১: মেসির সেই "ম্যাজিকাল ফ্রি-কিক"</strong>
-                            <p class="text-xs sm:text-sm mt-1">শট নেওয়ার জন্য পজিশন নিলেন লিওনেল মেসি। তিনি বলটিকে এমনভাবে কিক করলেন যেন তা প্রাসের গতিপথ (Projectile Motion) বজায় রেখে ঠিক <strong>1.5 s</strong> পর ইংল্যান্ডের গোলপোস্টে পৌঁছায়। বলটি যখন বাতাসে তার গতিপথের সর্বোচ্চ বিন্দুতে উঠেছিল, ঠিক তখন বলটির উলম্ব বেগ (v<sub>y</sub>) শূন্য হয়ে যায়।</p>
-                        </div>
-                        <div>
-                            <strong class="text-cyan-400">ঘটনা ২: বেলিংহামের আকাশছোঁয়া ডিফেন্স লাইন</strong>
-                            <p class="text-xs sm:text-sm mt-1">মেসির কিক করা বলটি যখন বাতাসে ভাসছে, তখন বলের গতিপথের ঠিক মাঝখানে (গোলপোস্ট থেকে <strong>12.5 m</strong> সামনে) মানবপ্রাচীরে দাঁড়িয়ে থাকা জুড বেলিংহাম বলটি ক্লিয়ার করার জন্য লাফিয়ে উঠলেন। বেলিংহামের উচ্চতা এবং লাফানোর ক্ষমতা মিলিয়ে তিনি সর্বোচ্চ <strong>2.9 m</strong> উচ্চতা পর্যন্ত বলের নাগাল পেতে পারেন।</p>
-                        </div>
-                        <div>
-                            <strong class="text-cyan-400">ঘটনা ৩: রিবাউন্ড ও কেইন-আলভারেজের রুদ্ধশ্বাস দৌড়</strong>
-                            <p class="text-xs sm:text-sm mt-1">বলটি ডিফেন্সের ওপর দিয়ে গিয়ে ইংল্যান্ডের গোলপোস্টের ক্রসবারে লেগে রিবাউন্ড হয়ে (ফিরে এসে) মাঠের ডান প্রান্তে পড়ে। সেখানে ওত পেতে থাকা আর্জেন্টিনার উইঙ্গার হুলিয়ান আলভারেজ <strong>10 ms<sup>-1</sup></strong> বেগে বলটি নিয়ে গোলপোস্টের সমান্তরালে সাইডলাইন ধরে দৌড়াতে শুরু করেন। ঠিক তখনই আলভারেজ থেকে <strong>12 m</strong> দূরে থাকা ইংল্যান্ডের অধিনায়ক হ্যারি কেইন আলভারেজের দৌড়ের দিকের সাথে <strong>120°</strong> কোণে <strong>8 ms<sup>-1</sup></strong> বেগে তাঁকে ট্যাকল করতে ছুটে আসেন।</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Images Gallery inside modal -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="rounded-xl overflow-hidden border border-cyan-500/40 bg-slate-950 p-2 flex items-center justify-center h-64">
-                        <img class="max-h-full w-auto object-contain crisp-img" src="https://i.postimg.cc/sGVWkLpm/1.jpg" alt="Match Action 1">
-                    </div>
-                    <div class="rounded-xl overflow-hidden border border-cyan-500/40 bg-slate-950 p-2 flex items-center justify-center h-64">
-                        <img class="max-h-full w-auto object-contain crisp-img" src="https://i.postimg.cc/7JxzFRgd/2.jpg" alt="Match Action 2">
-                    </div>
-                </div>
-
-                <!-- Shortened Questions -->
-                <div class="space-y-4 bg-slate-900/60 p-6 rounded-2xl border border-cyan-500/20 font-sans">
-                    <h4 class="text-cyan-400 font-bold text-lg font-poppins">❓ সংক্ষিপ্ত চ্যালেঞ্জসমূহ</h4>
-                    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs sm:text-sm">
-                        <strong class="text-cyan-400">প্রশ্ন (ক):</strong> মেসির শটের আদি বেগ (v₀) এবং প্রক্ষেপণ কোণ (θ₀) কত ছিল?
-                    </div>
-                    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs sm:text-sm">
-                        <strong class="text-cyan-400">প্রশ্ন (খ):</strong> বলটি যখন মাঝপথে ছিল, তখন বেলিংহাম কি তা ব্লক করতে পেরেছিলেন?
-                    </div>
-                    <div class="p-3 bg-slate-950 rounded-xl border border-slate-800 text-xs sm:text-sm">
-                        <strong class="text-cyan-400">প্রশ্ন (গ):</strong> কেইনের সাপেক্ষে আলভারেজের আপেক্ষিক বেগ এবং তাদের সর্বনিম্ন দূরত্ব কত?
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript for Modal Control -->
-    <script>
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-        window.onclick = function(event) {
-            if (event.target.classList.contains('fixed')) {
-                event.target.classList.add('hidden');
-                document.body.style.overflow = 'auto';
-            }
-        }
-    </script>
 
     <!-- Professional Footer -->
     <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
