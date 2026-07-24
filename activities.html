@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - CCPAC | Chittagong College Physics & Astronomy Club</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceDark: '#030712',
+                        spaceCard: '#0b1329',
+                        neonCyan: '#06b6d4',
+                        neonBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .crisp-img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.75) 0%, rgba(3, 7, 18, 0.85) 100%);
+            backdrop-filter: blur(20px);
+        }
+        .glow-box {
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.3);
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- Glowing Background Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
+
+    <!-- Navigation Bar (Matched with Home Page) -->
+    <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30 crisp-img">
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="index.html#explore-section" class="hover:text-cyan-400 transition">Explore</a>
+                <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
+                <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
+                <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/25">
+                Join CCPAC
+            </a>
+        </div>
+    </header>
+
+    <!-- Activities Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 text-center space-y-6">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
+            <i class="fa-solid fa-bolt"></i>
+            <span>What We Do</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-poppins">
+            Our Activities
+        </h1>
+        
+        <!-- Detailed Description Box -->
+        <div class="glass-card p-6 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl text-slate-300 text-sm sm:text-base leading-relaxed text-left space-y-4 font-sans">
+            <p>
+                At the Chittagong College Physics & Astronomy Club, we engage our members through a diverse range of activities designed to nurture curiosity, scientific thinking, and problem-solving skills. We organize regular academic sessions on physics and astronomy, conducted by seniors, alumni, and invited instructors, covering topics from foundational concepts to advanced research, while also providing valuable insights into higher studies and real-world applications.
+            </p>
+            <p>
+                To further strengthen analytical abilities and critical thinking, CCPAC conducts a <strong class="text-cyan-300">Weekly Physics Challenge</strong>, where members engage with carefully curated problems that encourage logical reasoning and consistent interaction with physical concepts.
+            </p>
+            <p>
+                In addition, the club actively promotes scientific communication through article writing initiatives, enabling members to articulate ideas, reflect on sessions, and present complex concepts in a clear and engaging manner.
+            </p>
+            <p>
+                Expanding beyond traditional formats, CCPAC has also introduced its own podcast, <strong class="text-cyan-300">EigenTalks</strong>, which serves as a platform for meaningful conversations, where academic insights, personal journeys, and diverse perspectives come together.
+            </p>
+            <p>
+                Through the <strong class="text-cyan-300">Achievers Blueprint</strong> initiative, we highlight success stories, roadmap guides, and achievement trajectories of our members and alumni, inspiring the next generation of physics enthusiasts.
+            </p>
+            <p>
+                Through this blend of academic and creative initiatives, members not only deepen their understanding of science but also develop collaboration, creativity, and a lasting passion for exploration—making CCPAC a vibrant and intellectually stimulating community.
+            </p>
+        </div>
+    </section>
+
+    <!-- Interactive Activity Cards Grid -->
+    <section class="max-w-6xl mx-auto px-6 py-10 space-y-12">
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">
+                Explore Core Segments
+            </h2>
+            <p class="text-slate-400 text-sm font-sans">Click on any section below to explore detailed insights</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1: Sessions -->
+            <a href="sessions.html" class="glass-card p-8 rounded-3xl border border-slate-800 text-center space-y-4 glow-box flex flex-col justify-between block group">
+                <div>
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shadow-inner group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition font-poppins">SESSIONS</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed font-sans">Regular academic lectures, guest speaker programs, and interactive physics discussions.</p>
+                </div>
+                <span class="inline-block text-cyan-400 font-semibold text-xs uppercase tracking-wider pt-2 font-poppins">Explore <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </a>
+
+            <!-- Card 2: Weekly Physics Challenge -->
+            <a href="challenge.html" class="glass-card p-8 rounded-3xl border border-slate-800 text-center space-y-4 glow-box flex flex-col justify-between block group">
+                <div>
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shadow-inner group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition font-poppins">WEEKLY PHYSICS CHALLENGE</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed font-sans">Curated problem-solving challenges designed to sharpen critical and analytical thinking.</p>
+                </div>
+                <span class="inline-block text-cyan-400 font-semibold text-xs uppercase tracking-wider pt-2 font-poppins">Explore <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </a>
+
+            <!-- Card 3: Article Writing -->
+            <a href="article.html" class="glass-card p-8 rounded-3xl border border-slate-800 text-center space-y-4 glow-box flex flex-col justify-between block group">
+                <div>
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shadow-inner group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition font-poppins">ARTICLE</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed font-sans">Scientific writing initiatives empowering members to express complex ideas clearly.</p>
+                </div>
+                <span class="inline-block text-cyan-400 font-semibold text-xs uppercase tracking-wider pt-2 font-poppins">Explore <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </a>
+
+            <!-- Card 4: Podcast (EigenTalks) -->
+            <a href="podcast.html" class="glass-card p-8 rounded-3xl border border-slate-800 text-center space-y-4 glow-box flex flex-col justify-between block group">
+                <div>
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shadow-inner group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-podcast"></i>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition font-poppins">PODCAST</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed font-sans">EigenTalks podcast featuring engaging discussions on science, astronomy, and journeys.</p>
+                </div>
+                <span class="inline-block text-cyan-400 font-semibold text-xs uppercase tracking-wider pt-2 font-poppins">Explore <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </a>
+
+            <!-- Card 5: Achievers Blueprint -->
+            <a href="achievers.html" class="glass-card p-8 rounded-3xl border border-slate-800 text-center space-y-4 glow-box flex flex-col justify-between block group sm:col-span-2 lg:col-span-2">
+                <div>
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl shadow-inner group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition font-poppins">ACHIEVERS BLUEPRINT</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed font-sans max-w-md mx-auto">Success stories, roadmaps, and achievement trajectories of our members and alumni excelling in physics.</p>
+                </div>
+                <span class="inline-block text-cyan-400 font-semibold text-xs uppercase tracking-wider pt-2 font-poppins">Explore <i class="fa-solid fa-arrow-right ml-1"></i></span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Professional Footer (Matched with Home Page) -->
+    <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
+                    <li><a href="team.html" class="hover:text-cyan-400 transition">Executives</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
+                    <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
+                    <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
+                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
+                <ul class="space-y-2 text-xs font-sans">
+                    <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
+                    <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
+                    <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
+                    <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
+                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3 lg:col-span-1 sm:col-span-2">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
+                <p class="text-xs text-slate-400 font-sans">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400 font-sans">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
+                    <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                    <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 font-sans">
+            <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
+            <div class="flex space-x-5 text-slate-300 text-base">
+                <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
