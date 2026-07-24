@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Panels - CCPAC</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceDark: '#030712',
+                        spaceCard: '#0b1329',
+                        neonCyan: '#06b6d4',
+                        neonBlue: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .crisp-img {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.7) 0%, rgba(3, 7, 18, 0.8) 100%);
+            backdrop-filter: blur(20px);
+        }
+        .glow-box {
+            position: relative;
+            transition: all 0.4s ease;
+        }
+        .glow-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
+            border-color: rgba(6, 182, 212, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-spaceDark text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- Glowing Background Effect -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
+
+    <!-- Navigation Bar (Matched with Home Page) -->
+    <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="https://i.ibb.co.com/xSmsb1tx/IMG-20260105-WA0001.jpg" alt="CCPAC Logo" class="w-10 h-10 rounded-full object-cover border-2 border-cyan-400 shadow-md shadow-cyan-500/30 crisp-img">
+                <span class="text-xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">CCPAC</span>
+            </div>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="index.html#explore-section" class="hover:text-cyan-400 transition">Explore</a>
+                <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
+                <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
+                <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
+                <a href="index.html#contact" class="hover:text-cyan-400 transition">Contact</a>
+            </nav>
+            <a href="https://forms.gle/xEkoVKycxdRpanXh8" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-4 py-2 rounded-xl text-xs sm:text-sm transition shadow-lg shadow-cyan-500/25">
+                Join CCPAC
+            </a>
+        </div>
+    </header>
+
+    <!-- Team Hero & Panel Intro Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 text-center space-y-6">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
+            <i class="fa-solid fa-users-gear"></i>
+            <span>Leadership & Administration</span>
+        </div>
+        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-poppins">
+            CCPAC Executive Panels
+        </h1>
+        <div class="glass-card p-6 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl text-slate-300 text-sm sm:text-base leading-relaxed text-left space-y-4 font-sans">
+            <p>
+                The Executive Panel of the Chittagong College Physics & Astronomy Club plays a vital role in guiding the club’s activities and ensuring its smooth operation. This panel is responsible for planning, organizing, and supervising all academic and organizational programs of the club.[cite: 4]
+            </p>
+            <p>
+                The Executive Panel works with dedication to promote physics and astronomy among students. They arrange regular academic sessions, coordinate with seniors and alumni for lectures and discussions, and manage weekly activities such as the Weekly Physics Challenge and article writing programs. Their efforts help create a structured and engaging environment for learning beyond the classroom.[cite: 4]
+            </p>
+            <p>
+                Through teamwork and leadership, the Executive Panel ensures that every member gets opportunities to participate and grow. They also maintain discipline, communication, and cooperation within the club, strengthening the bond among juniors, seniors, and alumni.[cite: 4]
+            </p>
+            <p>
+                The CCPAC Executive Panel is not only an administrative body but also a group of students committed to inspiring curiosity, encouraging scientific thinking, and building a strong academic community. Their leadership continues to guide CCPAC toward its goal of exploring the universe through knowledge and collaboration.[cite: 4]
+            </p>
+        </div>
+
+        <!-- Glowing Interactive Core Pillars Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
+                <i class="fa-solid fa-handshake text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Teamwork</h4>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
+                <i class="fa-solid fa-chess-king text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Leadership</h4>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
+                <i class="fa-solid fa-compass text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Guidance</h4>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
+                <i class="fa-solid fa-life-ring text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Support</h4>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
+                <i class="fa-solid fa-lightbulb text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Innovation</h4>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
+                <i class="fa-solid fa-network-wired text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Coordination</h4>
+            </div>
+            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center col-span-2 glow-box">
+                <i class="fa-solid fa-trophy text-cyan-400 text-xl mb-2"></i>
+                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Achievements</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Panel Selection / Archive Directory -->
+    <section class="max-w-5xl mx-auto px-6 py-12 space-y-8">
+        <div class="text-center space-y-2">
+            <h2 class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">
+                Select Executive Panel
+            </h2>
+            <p class="text-slate-400 text-sm font-sans">Explore committee members across different tenure years</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <!-- Panel 2025-26 Card -->
+            <a href="panel-2025-26.html" class="glass-card p-8 rounded-3xl border border-slate-800 hover:border-cyan-400/80 transition shadow-2xl group flex justify-between items-center glow-box">
+                <div class="space-y-2">
+                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">Active Panel</span>
+                    <h3 class="text-2xl font-black text-white group-hover:text-cyan-300 transition font-poppins">Executive Panel 2025–26</h3>
+                    <p class="text-slate-400 text-xs font-sans">Current administrative committee & members</p>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </a>
+
+            <!-- Panel 2026-27 Card (Upcoming / Placeholder) -->
+            <div class="glass-card p-8 rounded-3xl border border-slate-800/50 opacity-75 shadow-2xl flex justify-between items-center">
+                <div class="space-y-2">
+                    <span class="text-slate-500 text-xs font-bold uppercase tracking-widest font-poppins">Upcoming Panel</span>
+                    <h3 class="text-2xl font-black text-slate-300 font-poppins">Executive Panel 2026–27</h3>
+                    <p class="text-slate-500 text-xs font-sans">Will be announced soon</p>
+                </div>
+                <div class="w-12 h-12 rounded-full bg-slate-800/50 border border-slate-700 flex items-center justify-center text-slate-500">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer (Matched with Home Page) -->
+    <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
+                    <li><a href="team.html" class="hover:text-cyan-400 transition">Executives</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
+                    <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
+                    <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
+                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
+                    <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
+                    <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
+                    <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
+                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
+                </ul>
+            </div>
+            <div class="space-y-3 lg:col-span-1 sm:col-span-2">
+                <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
+                <p class="text-xs text-slate-400">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+                <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
+                    <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
+                    <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+            <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
+            <div class="flex space-x-5 text-slate-300 text-base">
+                <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
