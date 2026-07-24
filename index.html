@@ -1,175 +1,91 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raihan's Gallery</title>
-  <style>
-    /* CSS Styling */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f172a;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    /* Trigger Button to Open Gallery */
-    .open-gallery-btn {
-      padding: 12px 24px;
-      background-color: #00bcd4;
-      color: #000;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .open-gallery-btn:hover {
-      background-color: #008ba3;
-      color: #fff;
-    }
-
-    /* Modal Background */
-    .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.85);
-      justify-content: center;
-      align-items: center;
-    }
-
-    .modal-content {
-      position: relative;
-      max-width: 850px;
-      width: 90%;
-      background: #0b0f19;
-      border-radius: 12px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-    }
-
-    .modal-content img {
-      width: 100%;
-      height: auto;
-      max-height: 80vh;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-
-    .nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      border: none;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 20px;
-      z-index: 10;
-      transition: 0.3s;
-    }
-
-    .nav-btn:hover {
-      background-color: rgba(255, 255, 255, 0.4);
-    }
-
-    .prev-btn { left: 15px; }
-    .next-btn { right: 15px; }
-
-    .photo-counter {
-      position: absolute;
-      bottom: 15px;
-      right: 20px;
-      background: rgba(0, 0, 0, 0.7);
-      color: #fff;
-      padding: 6px 12px;
-      border-radius: 6px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-
-    .close-btn {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      color: white;
-      font-size: 30px;
-      cursor: pointer;
-      z-index: 1001;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Raihan Siddiquee - Achievements</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+        .gallery {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(0, 168, 204, 0.15);
+            color: #38bdf8;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            border: 1px solid #0284c7;
+        }
+        h2 {
+            margin: 10px 0;
+            color: #f0f6fc;
+        }
+        p {
+            color: #8b949e;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Gallery Trigger Button -->
-  <button class="open-gallery-btn" onclick="openModal(0)">গ্যালারি খুলুন</button>
+    <div class="container">
+        <!-- প্রথম সেকশন: রায়হানের আন্তর্জাতিক অর্জন -->
+        <div class="gallery">
+            <span class="badge">INTERNATIONAL ACHIEVEMENT</span>
+            <h2>Our Raihan shines bright with the Silver Medal at the 67th IMO!</h2>
+            <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h1.jpeg" alt="Md. Raihan Siddiquee Silver Medal 67th IMO">
+            <p>📅 Date: 20-07-2026</p>
+        </div>
 
-  <!-- Modal Structure -->
-  <div id="imageModal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn" onclick="closeModal()">&times;</span>
-      <button class="nav-btn prev-btn" onclick="changeImage(-1)">&#10094;</button>
-      <button class="nav-btn next-btn" onclick="changeImage(1)">&#10095;</button>
+        <hr style="border: 0; border-top: 1px solid #30363d; margin: 30px 0;">
 
-      <img id="modalImg" src="" alt="Gallery Image">
-      <div id="photoCounter" class="photo-counter">Photo 1 of 4</div>
+        <!-- দ্বিতীয় সেকশন: অনার বা সম্মাননা পর্ব (h2 এবং h3 ছবিসহ) -->
+        <div class="gallery">
+            <span class="badge">APPRECIATION & RECOGNITION</span>
+            <h2>Tokens of Honour Conferred upon Honorable Achievers</h2>
+            
+            <!-- h2 ছবি -->
+            <div style="margin-bottom: 15px;">
+                <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h2.jpeg" alt="Token of Honour - Photo 1">
+            </div>
+
+            <!-- h3 ছবি -->
+            <div>
+                <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h3.jpeg" alt="Token of Honour - Photo 2">
+            </div>
+        </div>
     </div>
-  </div>
-
-  <script>
-    // Image Array: First one is Raihan's full achievement pic, followed by GitHub Honor pictures
-    const images = [
-      "https://github.com/ccpactechnical-cloud/ccpac-official/raw/main/h1.jpeg", // বদল করে আপনার মূল রায়হানের ছবির লোকাল পাথ বা সঠিক লিংক দিতে পারেন
-      "https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h1.jpeg",
-      "https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h2.jpeg",
-      "https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/h3.jpeg"
-    ];
-
-    let currentIndex = 0;
-
-    function openModal(index) {
-      currentIndex = index;
-      updateModalImage();
-      document.getElementById("imageModal").style.display = "flex";
-    }
-
-    function closeModal() {
-      document.getElementById("imageModal").style.display = "none";
-    }
-
-    function changeImage(step) {
-      currentIndex += step;
-      if (currentIndex < 0) {
-        currentIndex = images.length - 1;
-      } else if (currentIndex >= images.length) {
-        currentIndex = 0;
-      }
-      updateModalImage();
-    }
-
-    function updateModalImage() {
-      const imgElement = document.getElementById("modalImg");
-      const counterElement = document.getElementById("photoCounter");
-      
-      imgElement.src = images[currentIndex];
-      counterElement.innerText = `Photo ${currentIndex + 1} of ${images.length}`;
-    }
-  </script>
 
 </body>
 </html>
