@@ -104,12 +104,13 @@
     <section class="max-w-6xl mx-auto px-6 py-6 space-y-10">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Card 1: Raihan Siddiquee (Medal Overflow Highlighted) -->
-            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-visible glow-box flex flex-col justify-between mt-12 mb-4">
+            <!-- Card 1: Raihan Siddiquee -->
+            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-hidden glow-box flex flex-col justify-between">
                 <div>
-                    <!-- Image Container with overflow visible so the medal pops out of the top/card -->
-                    <div class="relative h-80 overflow-visible bg-transparent rounded-t-3xl">
-                        <img src="https://i.ibb.co.com/HLyHzJJK/WhatsApp-Image-2026-07-20-at-5-28-06-PM.jpg" alt="Md. Raihan Siddiquee" class="w-full h-full object-cover object-top rounded-3xl crisp-img shadow-2xl border border-cyan-500/30">
+                    <!-- Image Container with object-contain to show full head and medal properly -->
+                    <div class="relative h-80 bg-slate-950 flex items-center justify-center rounded-t-3xl border-b border-slate-800">
+                        <!-- GitHub Raw Image Link -->
+                        <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/WhatsApp%20Image%202026-07-20%20at%205.28.06%20PM.jpeg" alt="Md. Raihan Siddiquee" class="w-full h-full object-contain object-center rounded-t-3xl crisp-img p-2">
                         
                         <!-- Badge inside bottom left of image -->
                         <span class="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-cyan-300 text-xs font-bold uppercase backdrop-blur-md font-poppins shadow-lg z-20">
@@ -117,7 +118,7 @@
                         </span>
                     </div>
 
-                    <div class="p-6 pt-12 space-y-3 font-sans">
+                    <div class="p-6 space-y-3 font-sans">
                         <h3 class="text-xl font-bold text-white font-poppins">Md. Raihan Siddiquee</h3>
                         <p class="text-cyan-400 text-xs font-semibold">Silver Medalist, 67th International Mathematical Olympiad (IMO) 2026</p>
                         <p class="text-slate-400 text-xs leading-relaxed">
@@ -134,7 +135,7 @@
             </div>
 
             <!-- Future/Upcoming Blueprint Card 2 (Placeholder) -->
-            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-hidden glow-box flex flex-col justify-between opacity-80 mt-12 mb-4">
+            <div class="glass-card rounded-3xl border border-slate-800/80 shadow-2xl overflow-hidden glow-box flex flex-col justify-between opacity-80">
                 <div>
                     <div class="relative h-80 overflow-hidden bg-slate-950 flex items-center justify-center border-b border-slate-800">
                         <i class="fa-solid fa-user-graduate text-slate-700 text-5xl"></i>
@@ -142,7 +143,7 @@
                             Upcoming Edition
                         </span>
                     </div>
-                    <div class="p-6 pt-12 space-y-3 font-sans">
+                    <div class="p-6 space-y-3 font-sans">
                         <h3 class="text-xl font-bold text-slate-300 font-poppins">Next Feature</h3>
                         <p class="text-slate-500 text-xs font-semibold">To Be Announced</p>
                         <p class="text-slate-500 text-xs leading-relaxed">
