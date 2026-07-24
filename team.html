@@ -37,13 +37,12 @@
             background: linear-gradient(135deg, rgba(11, 19, 41, 0.75) 0%, rgba(3, 7, 18, 0.85) 100%);
             backdrop-filter: blur(20px);
         }
-        .glow-box {
-            position: relative;
+        .member-card {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .glow-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 35px rgba(6, 182, 212, 0.3);
+        .member-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.25);
             border-color: rgba(6, 182, 212, 0.6);
         }
     </style>
@@ -53,7 +52,7 @@
     <!-- Glowing Background Effect -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation Bar (Matched with Home Page) -->
     <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -74,237 +73,245 @@
         </div>
     </header>
 
-    <!-- Panel Hero Section -->
-    <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 text-center space-y-4">
+    <!-- Back to Panels Directory -->
+    <div class="max-w-7xl mx-auto px-6 pt-8">
+        <a href="team.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-cyan-400 hover:text-cyan-300 transition font-sans">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span>Back to All Panels</span>
+        </a>
+    </div>
+
+    <!-- Panel Header Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-10 pb-8 text-center space-y-4">
         <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
-            <i class="fa-solid fa-users-rectangle"></i>
-            <span>Active Committee</span>
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Tenure 2025–26</span>
         </div>
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-poppins">
-            Executive Panel 2025–26
+            Executive Committee 2025–26
         </h1>
-        <p class="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed font-sans">
-            Meet the dedicated executive members steering the Chittagong College Physics & Astronomy Club toward new heights of academic excellence and collaborative discovery.
+        <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-sans">
+            Meet the dedicated leaders and coordinators driving excellence, innovation, and scientific curiosity at CCPAC.
         </p>
     </section>
 
-    <!-- Executive Members Grid -->
-    <section class="max-w-7xl mx-auto px-6 py-10">
+    <!-- Executive Committee Showcase Grid -->
+    <section class="max-w-7xl mx-auto px-6 py-10 space-y-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <!-- Sajjad -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/shs.jpeg" alt="Sajjad" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 1. Sajjad Hosen Sakib -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/shs.jpeg" alt="Sajjad Hosen Sakib" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Sajjad</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Srishti -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/sbi.jpeg" alt="Srishti" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Srishti</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Sajjad Hosen Sakib</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">President</p>
                 </div>
             </div>
 
-            <!-- Prithwijit -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/pm.jpeg" alt="Prithwijit" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 2. Srishti Bhattacharjee Ichchha -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/sbi.jpeg" alt="Srishti Bhattacharjee Ichchha" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Prithwijit</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Mashruka -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/mic.jpeg" alt="Mashruka" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Mashruka</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Srishti Bhattacharjee Ichchha</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Vice President</p>
                 </div>
             </div>
 
-            <!-- Fahmida -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/ish.jpeg" alt="Fahmida" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 3. Prithwijit Mallik -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/pm.jpeg" alt="Prithwijit Mallik" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Fahmida</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Sejuti -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/sj.jpeg" alt="Sejuti" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Sejuti</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Prithwijit Mallik</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">General Secretary</p>
                 </div>
             </div>
 
-            <!-- Apurba -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/ac.jpeg" alt="Apurba" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 4. Mashrukha Islam Chowdhury -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/mic.jpeg" alt="Mashrukha Islam Chowdhury" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Apurba</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Rjarshi -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/r.jpeg" alt="Rjarshi" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Rjarshi</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Mashrukha Islam Chowdhury</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Joint Secretary</p>
                 </div>
             </div>
 
-            <!-- Nirnoy -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/n.jpeg" alt="Nirnoy" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 5. Fahmida Nowrin -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/ish.jpeg" alt="Fahmida Nowrin" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Nirnoy</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Farhan -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/f.jpeg" alt="Farhan" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Farhan</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Fahmida Nowrin</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Creative Secretary</p>
                 </div>
             </div>
 
-            <!-- Nayeem -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/na.jpeg" alt="Nayeem" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 6. Sejuti Karmakar -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/sj.jpeg" alt="Sejuti Karmakar" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Nayeem</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Mehraj -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/mt.jpeg" alt="Mehraj" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Mehraj</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Sejuti Karmakar</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Academic Secretary</p>
                 </div>
             </div>
 
-            <!-- Tahsin -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/t.jpeg" alt="Tahsin" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 7. Apurba Chowdhury -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/ac.jpeg" alt="Apurba Chowdhury" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Tahsin</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Towsif -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/ta.jpeg" alt="Towsif" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Towsif</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Apurba Chowdhury</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Academic Secretary</p>
                 </div>
             </div>
 
-            <!-- Tasnim Jahan -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/tj.jpeg" alt="Tasnim Jahan" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 8. Rajarshi Das Gupta -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/r.jpeg" alt="Rajarshi Das Gupta" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Rajarshi Das Gupta</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Academic Secretary</p>
+                </div>
+            </div>
+
+            <!-- 9. Nirnoy Nil Paul -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/n.jpeg" alt="Nirnoy Nil Paul" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Nirnoy Nil Paul</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Academic Secretary</p>
+                </div>
+            </div>
+
+            <!-- 10. Mehraj Tajwar -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/mt.jpeg" alt="Mehraj Tajwar" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Mehraj Tajwar</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Organizing Secretary</p>
+                </div>
+            </div>
+
+            <!-- 11. Labib Hasan -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/l.jpeg" alt="Labib Hasan" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Labib Hasan</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Management Secretary</p>
+                </div>
+            </div>
+
+            <!-- 12. Arithra Chowdhury -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/a.jpeg" alt="Arithra Chowdhury" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Arithra Chowdhury</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Human Resource Secretary</p>
+                </div>
+            </div>
+
+            <!-- 13. Tahsin Al Hossain -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/t.jpeg" alt="Tahsin Al Hossain" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Tahsin Al Hossain</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Executive Member</p>
+                </div>
+            </div>
+
+            <!-- 14. Abadullah Morshed Nayem -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/na.jpeg" alt="Abadullah Morshed Nayem" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Abadullah Morshed Nayem</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Executive Member</p>
+                </div>
+            </div>
+
+            <!-- 15. Farhan Ahmad -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/f.jpeg" alt="Farhan Ahmad" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Farhan Ahmad</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Executive Member</p>
+                </div>
+            </div>
+
+            <!-- 16. Tasnim Jahan -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/tj.jpeg" alt="Tasnim Jahan" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
+                </div>
+                <div class="text-center space-y-1">
                     <h3 class="text-xl font-bold text-white font-poppins">Tasnim Jahan</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Executive Member</p>
                 </div>
             </div>
 
-            <!-- Labib -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/l.jpeg" alt="Labib" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
+            <!-- 17. Towsif Uddin -->
+            <div class="glass-card p-5 rounded-3xl border border-slate-800/80 shadow-2xl member-card group overflow-hidden">
+                <div class="relative w-full h-[320px] rounded-2xl overflow-hidden mb-4 bg-slate-950">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/ta.jpeg" alt="Towsif Uddin" class="relative w-full h-full object-cover rounded-2xl border border-slate-700 group-hover:scale-105 transition duration-500 crisp-img">
                 </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Labib</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
-                </div>
-            </div>
-
-            <!-- Arithra -->
-            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
-                <div class="relative w-36 h-36 mx-auto">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-full blur-md opacity-40"></div>
-                    <img src="https://raw.githubusercontent.com/ccpactechnical-cloud/ccpac-official/main/a.jpeg" alt="Arithra" class="relative w-36 h-36 object-cover rounded-full border-2 border-cyan-500/40 shadow-xl mx-auto crisp-img">
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-white font-poppins">Arithra</h3>
-                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1 font-poppins">Executive Member</p>
+                <div class="text-center space-y-1">
+                    <h3 class="text-xl font-bold text-white font-poppins">Towsif Uddin</h3>
+                    <p class="text-cyan-400 text-sm font-semibold tracking-wide font-sans">Executive Member</p>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Professional Footer -->
+    <!-- Professional Footer (Matched with Home Page) -->
     <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
-                <ul class="space-y-2 text-xs">
+                <ul class="space-y-2 text-xs font-sans">
                     <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
                     <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
                     <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
@@ -313,7 +320,7 @@
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
-                <ul class="space-y-2 text-xs">
+                <ul class="space-y-2 text-xs font-sans">
                     <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
                     <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
                     <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
@@ -321,14 +328,14 @@
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
-                <ul class="space-y-2 text-xs">
+                <ul class="space-y-2 text-xs font-sans">
                     <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
                     <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
                 </ul>
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Quick Links</h4>
-                <ul class="space-y-2 text-xs">
+                <ul class="space-y-2 text-xs font-sans">
                     <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
                     <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
                     <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
@@ -338,15 +345,15 @@
             </div>
             <div class="space-y-3 lg:col-span-1 sm:col-span-2">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Contact & Subscribe</h4>
-                <p class="text-xs text-slate-400">Chittagong College, College Road, Chattogram.</p>
-                <p class="text-xs text-slate-400">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
+                <p class="text-xs text-slate-400 font-sans">Chittagong College, College Road, Chattogram.</p>
+                <p class="text-xs text-slate-400 font-sans">Email: <a href="mailto:ccpacofficial@gmail.com" class="text-cyan-400 hover:underline">ccpacofficial@gmail.com</a></p>
                 <form onsubmit="event.preventDefault(); alert('Subscribed successfully!');" class="space-y-2 pt-1">
                     <input type="email" placeholder="Your email" required class="w-full px-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-slate-200 focus:outline-none focus:border-cyan-400">
                     <button type="submit" class="w-full py-1.5 bg-cyan-600 hover:bg-cyan-500 text-slate-950 font-bold rounded-lg text-xs transition shadow-md">SUBSCRIBE</button>
                 </form>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0">
+        <div class="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs space-y-4 md:space-y-0 font-sans">
             <p>Copyright © 2026 by Chittagong College Physics & Astronomy Club. All rights reserved.</p>
             <div class="flex space-x-5 text-slate-300 text-base">
                 <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
