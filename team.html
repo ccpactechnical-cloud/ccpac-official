@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Panels - CCPAC</title>
+    <title>Executive Panel - CCPAC | Chittagong College Physics & Astronomy Club</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -34,16 +34,16 @@
             image-rendering: crisp-edges;
         }
         .glass-card {
-            background: linear-gradient(135deg, rgba(11, 19, 41, 0.7) 0%, rgba(3, 7, 18, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(11, 19, 41, 0.75) 0%, rgba(3, 7, 18, 0.85) 100%);
             backdrop-filter: blur(20px);
         }
         .glow-box {
             position: relative;
-            transition: all 0.4s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .glow-box:hover {
             transform: translateY(-5px);
-            box-shadow: 0 0 30px rgba(6, 182, 212, 0.3);
+            box-shadow: 0 0 35px rgba(6, 182, 212, 0.3);
             border-color: rgba(6, 182, 212, 0.6);
         }
     </style>
@@ -53,7 +53,7 @@
     <!-- Glowing Background Effect -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1400px] h-[600px] bg-cyan-500/10 blur-[200px] rounded-full pointer-events-none"></div>
 
-    <!-- Navigation Bar (Matched with Home Page) -->
+    <!-- Navigation Bar -->
     <header class="sticky top-0 z-50 bg-spaceDark/90 backdrop-blur-xl border-b border-slate-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-3">
@@ -62,7 +62,7 @@
             </div>
             <nav class="hidden md:flex space-x-6 text-sm font-semibold tracking-wide text-slate-300">
                 <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
-                <a href="index.html#explore-section" class="hover:text-cyan-400 transition">Explore</a>
+                <a href="founders.html" class="hover:text-cyan-400 transition">Founders</a>
                 <a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a>
                 <a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a>
                 <a href="index.html#messages" class="hover:text-cyan-400 transition">Message Desk</a>
@@ -74,107 +74,92 @@
         </div>
     </header>
 
-    <!-- Team Hero & Panel Intro Section -->
-    <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 text-center space-y-6">
+    <!-- Team Hero Section -->
+    <section class="max-w-5xl mx-auto px-6 pt-20 pb-14 text-center space-y-4">
         <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">
-            <i class="fa-solid fa-users-gear"></i>
-            <span>Leadership & Administration</span>
+            <i class="fa-solid fa-users"></i>
+            <span>Leadership & Committee</span>
         </div>
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 font-poppins">
-            CCPAC Executive Panels
+            Executive Panel
         </h1>
-        <div class="glass-card p-6 sm:p-10 rounded-3xl border border-slate-800/80 shadow-2xl text-slate-300 text-sm sm:text-base leading-relaxed text-left space-y-4 font-sans">
-            <p>
-                The Executive Panel of the Chittagong College Physics & Astronomy Club plays a vital role in guiding the club’s activities and ensuring its smooth operation. This panel is responsible for planning, organizing, and supervising all academic and organizational programs of the club.
-            </p>
-            <p>
-                The Executive Panel works with dedication to promote physics and astronomy among students. They arrange regular academic sessions, coordinate with seniors and alumni for lectures and discussions, and manage weekly activities such as the Weekly Physics Challenge and article writing programs. Their efforts help create a structured and engaging environment for learning beyond the classroom.
-            </p>
-            <p>
-                Through teamwork and leadership, the Executive Panel ensures that every member gets opportunities to participate and grow. They also maintain discipline, communication, and cooperation within the club, strengthening the bond among juniors, seniors, and alumni.
-            </p>
-            <p>
-                The CCPAC Executive Panel is not only an administrative body but also a group of students committed to inspiring curiosity, encouraging scientific thinking, and building a strong academic community. Their leadership continues to guide CCPAC toward its goal of exploring the universe through knowledge and collaboration.
-            </p>
-        </div>
+        <p class="text-slate-300 text-base sm:text-lg max-w-3xl mx-auto leading-relaxed font-sans">
+            Meet the dedicated executive members and organizers driving the Chittagong College Physics & Astronomy Club forward with passion and commitment.
+        </p>
+    </section>
 
-        <!-- Glowing Interactive Core Pillars Grid -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
-                <i class="fa-solid fa-handshake text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Teamwork</h4>
+    <!-- Executive Members Grid -->
+    <section class="max-w-6xl mx-auto px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Executive Card Template -->
+            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
+                <div class="w-28 h-28 mx-auto rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-xl">
+                    <img src="https://i.ibb.co.com/d4029sKr/founder1.jpg" alt="Executive Name" class="w-full h-full object-cover rounded-full crisp-img">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white font-poppins">Member Name</h3>
+                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1">President / Secretary</p>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Working passionately to promote physics and astronomy culture among students.
+                </p>
+                <div class="flex justify-center space-x-4 pt-2 text-slate-300 text-sm">
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
-                <i class="fa-solid fa-chess-king text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Leadership</h4>
+
+            <!-- Repeatable Card 2 -->
+            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
+                <div class="w-28 h-28 mx-auto rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-xl">
+                    <img src="https://i.ibb.co.com/5h3HKNrv/founder2.jpg" alt="Executive Name" class="w-full h-full object-cover rounded-full crisp-img">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white font-poppins">Member Name</h3>
+                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1">Vice President</p>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Dedicated to organizing interactive workshops, sessions and Olympiad camps.
+                </p>
+                <div class="flex justify-center space-x-4 pt-2 text-slate-300 text-sm">
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
-                <i class="fa-solid fa-compass text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Guidance</h4>
+
+            <!-- Repeatable Card 3 -->
+            <div class="glass-card p-6 rounded-3xl border border-slate-800/80 shadow-2xl relative overflow-hidden glow-box text-center space-y-4">
+                <div class="w-28 h-28 mx-auto rounded-full p-1 bg-gradient-to-tr from-cyan-500 to-blue-600 shadow-xl">
+                    <img src="https://i.ibb.co.com/60sJTHQ9/60sJTHQ9.jpg" alt="Executive Name" class="w-full h-full object-cover rounded-full crisp-img">
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white font-poppins">Member Name</h3>
+                    <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mt-1">Organizing Secretary</p>
+                </div>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Coordinating events and expanding the club network across academic circles.
+                </p>
+                <div class="flex justify-center space-x-4 pt-2 text-slate-300 text-sm">
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition"><i class="fa-solid fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
-                <i class="fa-solid fa-life-ring text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Support</h4>
-            </div>
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
-                <i class="fa-solid fa-lightbulb text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Innovation</h4>
-            </div>
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center glow-box">
-                <i class="fa-solid fa-network-wired text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Coordination</h4>
-            </div>
-            <div class="glass-card p-4 rounded-xl border border-slate-800 text-center col-span-2 glow-box">
-                <i class="fa-solid fa-trophy text-cyan-400 text-xl mb-2"></i>
-                <h4 class="text-xs font-extrabold text-cyan-300 tracking-wider uppercase font-poppins">Achievements</h4>
-            </div>
+
         </div>
     </section>
 
-    <!-- Executive Panel Selection / Archive Directory -->
-    <section class="max-w-5xl mx-auto px-6 py-12 space-y-8">
-        <div class="text-center space-y-2">
-            <h2 class="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 font-poppins">
-                Select Executive Panel
-            </h2>
-            <p class="text-slate-400 text-sm font-sans">Explore committee members across different tenure years</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <!-- Panel 2025-26 Card -->
-            <a href="panel-2025-26.html" class="glass-card p-8 rounded-3xl border border-slate-800 hover:border-cyan-400/80 transition shadow-2xl group flex justify-between items-center glow-box">
-                <div class="space-y-2">
-                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest font-poppins">Active Panel</span>
-                    <h3 class="text-2xl font-black text-white group-hover:text-cyan-300 transition font-poppins">Executive Panel 2025–26</h3>
-                    <p class="text-slate-400 text-xs font-sans">Current administrative committee & members</p>
-                </div>
-                <div class="w-12 h-12 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-slate-950 transition">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </a>
-
-            <!-- Panel 2026-27 Card (Upcoming / Placeholder) -->
-            <div class="glass-card p-8 rounded-3xl border border-slate-800/50 opacity-75 shadow-2xl flex justify-between items-center">
-                <div class="space-y-2">
-                    <span class="text-slate-500 text-xs font-bold uppercase tracking-widest font-poppins">Upcoming Panel</span>
-                    <h3 class="text-2xl font-black text-slate-300 font-poppins">Executive Panel 2026–27</h3>
-                    <p class="text-slate-500 text-xs font-sans">Will be announced soon</p>
-                </div>
-                <div class="w-12 h-12 rounded-full bg-slate-800/50 border border-slate-700 flex items-center justify-center text-slate-500">
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Footer (Matched with Home Page) -->
+    <!-- Professional Footer -->
     <footer id="contact" class="bg-spaceCard border-t border-slate-800/80 mt-16 pt-12 pb-10 text-slate-400">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">About</h4>
                 <ul class="space-y-2 text-xs">
                     <li><a href="index.html" class="hover:text-cyan-400 transition">Home</a></li>
-                    <li><a href="about.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="founders.html" class="hover:text-cyan-400 transition">Founders</a></li>
                     <li><a href="index.html#membership" class="hover:text-cyan-400 transition">Membership</a></li>
                     <li><a href="team.html" class="hover:text-cyan-400 transition">Executives</a></li>
                 </ul>
@@ -182,16 +167,13 @@
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Events</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="events.html" class="hover:text-cyan-400 transition">Flagship Events</a></li>
-                    <li><a href="podcast.html" class="hover:text-cyan-400 transition">EigenTalks Podcast</a></li>
                     <li><a href="index.html#updates" class="hover:text-cyan-400 transition">Updates</a></li>
                 </ul>
             </div>
             <div class="space-y-3">
                 <h4 class="text-white font-bold text-xs tracking-wider font-poppins uppercase">Resources</h4>
                 <ul class="space-y-2 text-xs">
-                    <li><a href="article.html" class="hover:text-cyan-400 transition">Articles</a></li>
-                    <li><a href="challenge.html" class="hover:text-cyan-400 transition">Weekly Challenge</a></li>
+                    <li><a href="index.html" class="hover:text-cyan-400 transition">Articles</a></li>
                 </ul>
             </div>
             <div class="space-y-3">
@@ -199,9 +181,7 @@
                 <ul class="space-y-2 text-xs">
                     <li><a href="https://www.bdpho.org/" target="_blank" class="hover:text-cyan-400 transition">BDPhO</a></li>
                     <li><a href="https://www.facebook.com/bdaa.olympiad/" target="_blank" class="hover:text-cyan-400 transition">BDOAA</a></li>
-                    <li><a href="https://home.cern/" target="_blank" class="hover:text-cyan-400 transition">CERN</a></li>
                     <li><a href="https://ipho-unofficial.org/" target="_blank" class="hover:text-cyan-400 transition">IPhO</a></li>
-                    <li><a href="https://ioaastrophysics.org/" target="_blank" class="hover:text-cyan-400 transition">IOAA</a></li>
                 </ul>
             </div>
             <div class="space-y-3 lg:col-span-1 sm:col-span-2">
@@ -220,7 +200,6 @@
                 <a href="https://www.facebook.com/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="https://www.instagram.com/ccpac.official" target="_blank" class="hover:text-cyan-400 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
-                <a href="https://www.linkedin.com/company/ccpacofficial" target="_blank" class="hover:text-cyan-400 transition" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
