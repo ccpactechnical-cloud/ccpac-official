@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CCPAC Grand Final Special</title>
+    <title>CCPAC Semi-final Special</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Galada&family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
@@ -21,21 +21,22 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 20px;
         }
 
         .poster {
             background: linear-gradient(145deg, #111a36, #070d1f);
             width: 100%;
-            max-width: 1000px;
-            border: 3px solid #ff4b4b;
-            border-radius: 25px;
-            padding: 50px;
-            box-shadow: 0 0 40px rgba(255, 75, 75, 0.3);
+            max-width: 800px;
+            border: 3px solid #00f2fe;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 0 30px rgba(0, 242, 254, 0.25);
             position: relative;
             overflow: hidden;
         }
 
+        /* Neon Glow Accents */
         .poster::before {
             content: '';
             position: absolute;
@@ -43,260 +44,202 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(255, 75, 75, 0.05) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 242, 254, 0.05) 0%, transparent 70%);
             pointer-events: none;
         }
 
+        /* Header Styling */
         .header {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            border-bottom: 2px dashed rgba(255, 75, 75, 0.3);
-            padding-bottom: 30px;
-            margin-bottom: 40px;
+            border-bottom: 2px dashed rgba(0, 242, 254, 0.3);
+            padding-bottom: 25px;
+            margin-bottom: 30px;
         }
 
-        /* --- ইন্টারঅ্যাক্টিভ লোগো স্টাইল (ঘুরবে না, শুধু গ্লো করবে) --- */
         .club-logo {
-            width: 140px;
-            height: 140px;
-            object-fit: cover;
+            width: 130px;
+            height: 130px;
+            object-fit: contain;
+            background-color: rgba(255, 255, 255, 0.05);
             border-radius: 50%;
-            border: 2px solid #ff4b4b;
-            margin-bottom: 20px;
-            cursor: pointer;
-            transition: all 0.4s ease;
-            animation: logoPulse 3s infinite ease-in-out;
+            border: 2px solid #00f2fe;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
         }
 
         .club-logo:hover {
             transform: scale(1.05);
-            border-color: #ffb443;
-            box-shadow: 0 0 30px rgba(255, 180, 67, 0.8), 0 0 50px rgba(255, 75, 75, 0.4);
-        }
-
-        @keyframes logoPulse {
-            0%, 100% { box-shadow: 0 0 15px rgba(255, 75, 75, 0.4); }
-            50% { box-shadow: 0 0 30px rgba(255, 75, 75, 0.8); }
         }
 
         .club-name {
             font-family: 'Poppins', sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 700;
             letter-spacing: 1px;
-            color: #ff4b4b;
-            text-shadow: 0 0 10px rgba(255, 75, 75, 0.3);
+            color: #00f2fe;
+            text-shadow: 0 0 10px rgba(0, 242, 254, 0.3);
         }
 
         .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #a5b4fc;
             margin-top: 5px;
             font-weight: 600;
         }
 
+        /* World Cup Badges */
         .badge-container {
-            margin-top: 20px;
-            background: rgba(255, 75, 75, 0.1);
-            border: 1px solid rgba(255, 75, 75, 0.2);
-            padding: 10px 25px;
+            margin-top: 15px;
+            background: rgba(0, 242, 254, 0.1);
+            border: 1px solid rgba(0, 242, 254, 0.2);
+            padding: 8px 20px;
             border-radius: 50px;
             display: inline-block;
         }
 
         .badge-text {
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
-            color: #ff7676;
+            color: #4facfe;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
+        /* Match Content */
         .match-title {
             text-align: center;
-            font-size: 2.3rem;
+            font-size: 2rem;
             color: #ffffff;
             margin-bottom: 20px;
             font-weight: 700;
         }
 
         .match-vs {
-            background: linear-gradient(45deg, #ff4b4b, #ffb443);
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 800;
         }
 
-        .match-meta-box {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 15px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 75, 75, 0.2);
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 35px;
-            font-size: 0.95rem;
-            color: #cbd5e1;
-        }
-
-        .meta-item strong {
-            color: #ffb443;
-        }
-
         .section-box {
             background: rgba(255, 255, 255, 0.03);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 25px;
-            margin-bottom: 30px;
-            line-height: 1.8;
-            font-size: 1.05rem;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            line-height: 1.7;
         }
 
         .section-title {
-            color: #ff4b4b;
-            font-size: 1.4rem;
-            margin-bottom: 15px;
+            color: #00f2fe;
+            font-size: 1.25rem;
+            margin-bottom: 12px;
             font-weight: 700;
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
+        /* Event Timeline styling */
         .timeline {
             position: relative;
-            padding-left: 25px;
-            border-left: 2px solid rgba(255, 75, 75, 0.3);
-            margin: 30px 0;
+            padding-left: 20px;
+            border-left: 2px solid rgba(0, 242, 254, 0.3);
+            margin: 20px 0;
         }
 
         .event-card {
             position: relative;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             background: rgba(255, 255, 255, 0.02);
-            padding: 20px;
-            border-radius: 10px;
+            padding: 15px;
+            border-radius: 8px;
             border: 1px solid rgba(255, 255, 255, 0.05);
-            font-size: 1.05rem;
         }
 
         .event-card::before {
             content: '';
             position: absolute;
-            left: -32px;
-            top: 23px;
+            left: -27px;
+            top: 18px;
             width: 12px;
             height: 12px;
-            background: #ff4b4b;
+            background: #00f2fe;
             border-radius: 50%;
-            box-shadow: 0 0 8px #ff4b4b;
+            box-shadow: 0 0 8px #00f2fe;
         }
 
         .event-title {
             font-weight: 700;
-            color: #ffb443;
-            margin-bottom: 8px;
-            font-size: 1.15rem;
+            color: #4facfe;
+            margin-bottom: 5px;
         }
 
-        /* --- ইমেজ গ্যালারি স্টাইল --- */
+        /* Image Gallery Section */
         .image-gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 35px;
-        }
-
-        .gallery-box {
-            position: relative;
-            overflow: hidden;
-            border-radius: 16px;
-            border: 2px solid #ff4b4b;
-            background: rgba(17, 26, 54, 0.5); 
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 8px;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            height: 300px;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 25px;
         }
 
         .gallery-img {
-            width: 100%;
-            height: 100%;
+            width: 48%;
+            height: 250px;
             object-fit: contain;
-            border-radius: 10px;
-            transition: transform 0.4s ease;
+            background-color: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            border: 2px solid #00f2fe;
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .gallery-box:hover {
-            border-color: #ffb443;
-            box-shadow: 0 0 25px rgba(255, 180, 67, 0.5);
-            transform: translateY(-5px);
-        }
-
-        .gallery-box:hover .gallery-img {
+        .gallery-img:hover {
             transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0, 242, 254, 0.4);
         }
 
+        /* Questions Block */
         .question-card {
-            background: rgba(255, 75, 75, 0.03);
-            border-left: 4px solid #ff4b4b;
-            padding: 18px;
-            margin-bottom: 20px;
+            background: rgba(0, 242, 254, 0.03);
+            border-left: 4px solid #00f2fe;
+            padding: 15px;
+            margin-bottom: 15px;
             border-radius: 0 8px 8px 0;
-            font-size: 1.05rem;
         }
 
         .question-tag {
             font-weight: 700;
-            color: #ff4b4b;
+            color: #00f2fe;
             margin-bottom: 5px;
             text-transform: uppercase;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         .footer-tag {
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #64748b;
-            margin-top: 40px;
+            margin-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
-            padding-top: 20px;
+            padding-top: 15px;
             letter-spacing: 1px;
             font-weight: 600;
         }
 
-        @media (max-width: 768px) {
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
             .image-gallery {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+                gap: 15px;
             }
-            .gallery-box {
-                height: 250px;
-            }
-            .poster {
-                padding: 30px 20px;
-            }
-        }
-
-        @media print {
-            body {
-                background-color: #0b132b !important;
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
-            }
-            .poster {
-                background: linear-gradient(145deg, #111a36, #070d1f) !important;
-                border: 3px solid #ff4b4b !important;
-                box-shadow: none !important;
-            }
-            .gallery-box {
-                border: 2px solid #ff4b4b !important;
+            .gallery-img {
+                width: 100%;
+                height: 200px;
             }
         }
     </style>
@@ -304,13 +247,13 @@
 <body>
 
 <div class="poster">
-    <!-- Header -->
+    <!-- Header (Logo: 3.jpg) -->
     <div class="header">
         <img class="club-logo" src="https://i.postimg.cc/V0Ytxhjx/3.jpg" alt="CCPAC Logo">
         <div class="club-name">Chittagong College Physics & Astronomy Club</div>
         <div class="subtitle">CCPAC Presents</div>
         <div class="badge-container">
-            <span class="badge-text">🏆 World Cup 2026 Final Special 🏆</span>
+            <span class="badge-text">🏆 World Cup 2026 Semi-final Special 🏆</span>
         </div>
     </div>
 
@@ -320,24 +263,18 @@
         <span class="match-vs">আর্জেন্টিনা বনাম ইংল্যান্ড</span>
     </div>
 
-    <!-- Match Meta Details Section -->
-    <div class="match-meta-box">
-        <div class="meta-item">🗓️ <strong>তারিখ:</strong> ১৯ জুলাই, ২০২৬ (রোববার)</div>
-        <div class="meta-item">⏰ <strong>কিক-অফ:</strong> রাত ১২:০০ টা (বাংলাদেশ সময়)</div>
-        <div class="meta-item">🏟️ <strong>ভেন্যু:</strong> মেটলাইফ স্টেডিয়াম, নিউ জার্সি (ইউএসএ)</div>
-    </div>
-
     <!-- Match Background -->
     <div class="section-box">
         <div class="section-title">⚽ ম্যাচ ব্যাকগ্রাউন্ড</div>
         <p>
-            ২০২৬ সালের ফিফা বিশ্বকাপের দ্বিতীয় সেমিফাইনালে মুখোমুখি হয়েছে দুই চিরপ্রতিদ্বন্দ্বী আর্জেন্টিনা ও ইংল্যান্ড[cite: 2]। ম্যাচের বয়স তখন ৮৫ মিনিট। গ্যালারিজুড়ে রুদ্ধশ্বাস উত্তেজনা, স্কোরলাইন ১-১ গোলে ড্র। ঠিক এই মুহূর্তে ইংল্যান্ডের ডি-বক্সের ঠিক বাইরে একটি ফ্রি-কিক পেল আর্জেন্টিনা। বলটি গোলপোস্ট থেকে ঠিক <strong>r = 25 m</strong> দূরে মাটিতে স্থির অবস্থায় আছে[cite: 2]।
+            ২০২৬ সালের ফিফা বিশ্বকাপের দ্বিতীয় সেমিফাইনালে মুখোমুখি হয়েছে দুই চিরপ্রতিদ্বন্দ্বী আর্জেন্টিনা ও ইংল্যান্ড। ম্যাচের বয়স তখন ৮৫ মিনিট। গ্যালারিজুড়ে রুদ্ধশ্বাস উত্তেজনা, স্কোরলাইন ১-১ গোলে ড্র। ঠিক এই মুহূর্তে ইংল্যান্ডের ডি-বক্সের ঠিক বাইরে একটি ফ্রি-কিক পেল আর্জেন্টিনা। বলটি গোলপোস্ট থেকে ঠিক <strong>r = 25 m</strong> দূরে মাটিতে স্থির অবস্থায় আছে।
         </p>
         <p style="margin-top: 10px; color: #a5b4fc; font-weight: 600;">
-            নিচে মাঠের পরপর ঘটে যাওয়া তিনটি ঘটনার ক্রমানুসার দেওয়া হলো। ফিজিক্সের গতিবিদ্যা ও ভেক্টরের সূত্র ব্যবহার করে ঘটনাগুলোর গাণিতিক সত্যতা যাচাই করো[cite: 2]:
+            নিচে মাঠের পরপর ঘটে যাওয়া তিনটি ঘটনার ক্রমানুসার দেওয়া হলো। ফিজিক্সের গতিবিদ্যা ও ভেক্টরের সূত্র ব্যবহার করে ঘটনাগুলোর গাণিতিক সত্যতা যাচাই করো:
         </p>
     </div>
 
+    <!-- Chronology / Timeline -->
     <div class="timeline">
         <!-- Event 1 -->
         <div class="event-card">
@@ -354,38 +291,37 @@
         <!-- Event 3 -->
         <div class="event-card">
             <div class="event-title">ঘটনা ৩: রিবাউন্ড ও কেইন-আলভারেজের রুদ্ধশ্বাস দৌড়</div>
-            <p>বলটি ডিফেন্সের ওপর দিয়ে গিয়ে ইংল্যান্ডের গোলপোস্টের ক্রসবারে লেগে রিবাউন্ড হয়ে (ফিরে এসে) মাঠের ডান প্রান্তে পড়ে। সেখানে ওত পেতে থাকা আর্জেন্টিনার উইঙ্গার হুলিয়ান আলভারেজ <strong>10 ms⁻¹</strong> বেগে বলটি নিয়ে গোলপোস্টের সমান্তরালে সাইডলাইন ধরে দৌড়াতে শুরু করেন। ঠিক তখনই আলভারেজ থেকে <strong>12 m</strong> দূরে থাকা ইংল্যান্ডের অধিনায়ক হ্যারি কেইন আলভারেজের দৌড়ের দিকের সাথে <strong>120°</strong> কোণে <strong>8 ms⁻¹</strong> বেগে তাঁকে ট্যাকল করতে ছুটে আসেন।</p>
+            <p>বলটি ডিফেন্সের ওপর দিয়ে গিয়ে ইংল্যান্ডের গোলপোস্টের ক্রসবারে লেগে রিবাউন্ড হয়ে (ফিরে এসে) মাঠের ডান প্রান্তে পড়ে। সেখানে ওত পেতে থাকা আর্জেন্টিনার উইঙ্গার হুলিয়ান আলভারেজ <strong>10 ms<sup>-1</sup></strong> বেগে বলটি নিয়ে গোলপোস্টের সমান্তরালে সাইডলাইন ধরে দৌড়াতে শুরু করেন। ঠিক তখনই আলভারেজ থেকে <strong>12 m</strong> দূরে থাকা ইংল্যান্ডের অধিনায়ক হ্যারি কেইন আলভারেজের দৌড়ের দিকের সাথে <strong>120°</strong> কোণে <strong>8 ms<sup>-1</sup></strong> বেগে তাঁকে ট্যাকল করতে ছুটে আসেন।</p>
         </div>
     </div>
 
-    <p style="text-align: center; font-size: 0.95rem; color: #a5b4fc; margin-bottom: 30px;">
-        *(ধরে নাও, অভিকর্ষজ ত্বরণ <strong>g = 9.8 ms⁻²</strong> এবং বাতাসের বাধা উপেক্ষণীয়)*
+    <p style="text-align: center; font-size: 0.9rem; color: #a5b4fc; margin-bottom: 25px;">
+        *(ধরে নাও, অভিকর্ষজ ত্বরণ <strong>g = 10 ms<sup>-2</sup></strong> এবং বাতাসের বাধা উপেক্ষণীয়)*
     </p>
 
-    <!-- 🌟 ইমেজ গ্যালারি 🌟 -->
+    <!-- Match Action Images (1.jpg and 2.jpg) -->
     <div class="image-gallery">
-        <div class="gallery-box">
-            <img class="gallery-img" src="https://i.postimg.cc/sGVWkLpm/1.jpg" alt="Match Action 1">
-        </div>
-        <div class="gallery-box">
-            <img class="gallery-img" src="https://i.postimg.cc/7JxzFRgd/2.jpg" alt="Match Action 2">
-        </div>
+        <img class="gallery-img" src="https://i.postimg.cc/sGVWkLpm/1.jpg" alt="Match Action 1">
+        <img class="gallery-img" src="https://i.postimg.cc/7JxzFRgd/2.jpg" alt="Match Action 2">
     </div>
 
     <!-- Questions Section -->
-    <div class="section-box" style="background: rgba(255, 75, 75, 0.01); border-color: rgba(255, 75, 75, 0.15);">
-        <div class="section-title">❓ চ্যালেঞ্জসমূহ (Physics Semifinal Challenges)</div>
+    <div class="section-box" style="background: rgba(0, 242, 254, 0.01); border-color: rgba(0, 242, 254, 0.15);">
+        <div class="section-title">❓ চ্যালেঞ্জসমূহ</div>
 
+        <!-- Q1 -->
         <div class="question-card">
             <div class="question-tag">প্রশ্ন (ক)</div>
             <p>মেসি যখন বলটিতে কিক করেছিলেন, তখন বলটির আদি বেগ (v<sub>0</sub>) কত ছিল এবং অনুভূমিকের সাথে কত কোণে (&theta;<sub>0</sub>) কিক করতে হয়েছিল?</p>
         </div>
 
+        <!-- Q2 -->
         <div class="question-card">
             <div class="question-tag">প্রশ্ন (খ)</div>
             <p>ফিজিক্সের হিসেব অনুযায়ী, বলটি যখন বেলিংহামের মাথার ওপর দিয়ে যাচ্ছিল (ঠিক মাঝপথে), তখন কি বেলিংহামের লাফিয়ে উঠে বলটি ডিফ্লেক্ট বা ব্লক করার কোনো সুযোগ ছিল? গাণিতিকভাবে বিশ্লেষণ করো।</p>
         </div>
 
+        <!-- Q3 -->
         <div class="question-card">
             <div class="question-tag">প্রশ্ন (গ)</div>
             <p>কেইনের সাপেক্ষে আলভারেজের আপেক্ষিক বেগের মান ও দিক কত হবে? কেইন যদি আলভারেজকে ট্যাকল করতে চান, তবে কেইন আলভারেজের সর্বোচ্চ কতটা কাছাকাছি পৌঁছাতে পারবেন (অর্থাৎ তাদের মধ্যকার সর্বনিম্ন দূরত্ব কত হবে)?</p>
@@ -394,7 +330,7 @@
 
     <!-- Footer -->
     <div class="footer-tag">
-        &copy; CHITTAGONG COLLEGE PHYSICS & ASTRONOMY CLUB
+        © CHITTAGONG COLLEGE PHYSICS & ASTRONOMY CLUB
     </div>
 </div>
 
